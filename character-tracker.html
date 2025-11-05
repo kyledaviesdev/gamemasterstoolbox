@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kyle Davies">
+    <meta name="description" content="">
+    <title>Character Tracker</title>
+    <link rel="stylesheet" type="text/css" href="storymasters.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon-storymasters.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="character-tracker.js" type="module" defer></script>
+</head>
+<body>
+    <nav id="menuNav">
+        <div id="menuBar">
+            <a href="index.html">Home</a>
+            <a href="character-tracker.html">Character Tracker</a>
+            <a href="fey-curse-randomizer.html">Fey Curse Generator</a>
+        </div>
+        
+        <div class="dropdown">
+            <button id="hamburgerBtn" onclick="hamburgerMenu()" class="dropbtn">&#9776;</button>
+            <div id="hamburgerMenu" class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="character-tracker.html">Character Tracker</a>
+            <a href="fey-curse-randomizer.html">Fey Curse Generator</a>
+            </div>
+        </div>
+    </nav>
+  <header id="title">
+    <img src="images/favicon-storymasters.png">
+    <h1>Character Tracker</h1>
+  </header>
+  <hr>
+  <button id="save-chars">Save Characters</button>
+  <button id="load-chars">Load Characters</button>
+  <button id="create-char-btn">Track New Character</button>
+  <div id="display-characters">
+    <h2>Characters</h2>
+    <ul id="character-list"></ul>
+  </div>
+  <div id="character-popup" style="display: none;">
+    <button id="close-button" class="close-button" type="button">&times;</button>
+    <h2 class="colored">Create Character</h2>
+    <form id="char-input">
+    <div class="character-being">
+        <h3 class="character-name">Name: </h3>
+        <input class="character-name char-inputs" id="character-name-input">
+        <h3 class="character-species">Species: </h3>
+        <input type="text" list="species" class="character-species char-inputs" id="character-species-input">
+        <h3 class="character-subspecies">Subspecies: </h3>
+        <input class="character-subspecies char-inputs" id="character-subspecies-input">
+        <h3 class="character-job">Class: </h3>
+        <input type="text" list="jobs" class="character-job char-inputs" id="character-job-input">
+        <h3 class="character-subjob">Subclass: </h3>
+        <input class="character-subjob char-inputs" id="character-subjob-input">
+        <h3 class="character-background">Background: </h3>
+        <input class="character-background char-inputs" id="character-background-input" list="backgounds">
+    </div>
+    <div class="character-personalities">
+      <h3 class="character-personality">Personality: </h3>
+      <input class="character-personality char-inputs" id="character-personality-input">
+      <h3 class="character-ideals">Ideal: </h3>
+      <input class="character-ideals char-inputs" id="character-ideals-input">
+      <h3 class="character-bonds">Bond: </h3>
+      <input class="character-bonds char-inputs" id="character-bonds-input">
+      <h3 class="character-flaws">Flaw: </h3>
+      <input class="character-flaws char-inputs" id="character-flaws-input">
+      <h3 class="character-level">Level: </h3>
+      <select class="character-level char-inputs" id="character-level-input">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+        <option>13</option>
+        <option>14</option>
+        <option>15</option>
+        <option>16</option>
+        <option>17</option>
+        <option>18</option>
+        <option>19</option>
+        <option>20</option>
+      </select>
+
+      <div class="traits-buttons-box">
+        <h3 class="character-traits char-inputs">Traits: </h3>
+        <input id="character-traits-input" placeholder=' Split by ", " Ex. Common, Dwarvish, Elvish '></input>
+      </div>
+    </div>
+    <div class="character-backgrounds">
+        <h3 class="character-backstory">Backstory: </h3>
+        <span class="character-backstory textarea char-inputs" id="character-backstory-input" role="textbox" contenteditable></span>
+        <div class="allies-buttons-box">
+            <h3 class="character-allies">Allies/Organizations: </h3>
+            <input class="char-inputs" id="character-allies-input" placeholder=' Split by ", " Ex. Common, Dwarvish, Elvish '></input>
+        </div>
+        <div class="languages-buttons-box">
+            <h3 class="character-languages">Languages: </h3>
+            <input class="char-inputs" id="character-languages-input" placeholder=' Split by ", " Ex. Common, Dwarvish, Elvish '></input>
+        </div>
+    </div>
+    <div class="tag-buttons-box">
+      <h3 class="character-tags">Additional Tags: </h3>
+      <input class="char-inputs" id="character-tags-input" placeholder=' Split by ", " Ex. Common, Dwarvish, Elvish '></input>
+    </div>
+    <button id="add-char-btn" type="button">Submit</button>
+    </form>
+  </div>
+</body>
+</html>

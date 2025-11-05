@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kyle Davies">
+    <meta name="description" content="">
+    <title>Fey Curse Generator</title>
+    <link rel="stylesheet" type="text/css" href="storymasters.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon-storymasters.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="fey-curse-randomizer.js" type="module" defer></script>
+</head>
+<body>
+    <nav id="menuNav">
+        <div id="menuBar">
+            <a href="index.html">Home</a>
+            <a href="character-tracker.html">Character Tracker</a>
+            <a href="fey-curse-randomizer.html">Fey Curse Generator</a>
+        </div>
+        
+        <div class="dropdown">
+            <button id="hamburgerBtn" onclick="hamburgerMenu()" class="dropbtn">&#9776;</button>
+            <div id="hamburgerMenu" class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="character-tracker.html">Character Tracker</a>
+            <a href="fey-curse-randomizer.html">Fey Curse Generator</a>
+            </div>
+        </div>
+    </nav>
+  <header id="title">
+    <img src="images/favicon-storymasters.png">
+    <h1>Fey Curse Generator</h1>
+  </header>
+  <hr>
+  <button id="random-curse-btn">Roll for Curse</button>
+  <div id="display-curses">
+    <h2>Fey Curse</h2>
+    <ul id="randomized-curse"></ul>
+  </div>
+</body>
+</html>
