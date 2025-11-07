@@ -243,6 +243,23 @@ h1
   text-align: center;
   font-size: 2em;
 }
+
+/* Styles for the fey curse table: white borders around each cell */
+#curse-table {
+  width: 100%;
+  border-collapse: collapse; /* ensure borders are shared */
+}
+
+#curse-table th,
+#curse-table td {
+  border: 3px solid var(--accent2-color);
+  padding: 6px 8px;
+  vertical-align: top;
+}
+
+#curse-table thead th {
+  background: rgba(255,255,255,0.03);
+}
 #display-characters > h2,
 .character-personalities > h3,
 .character-being > h3,
