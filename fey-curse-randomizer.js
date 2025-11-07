@@ -2,6 +2,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const curseButton = document.getElementById('random-curse-btn');
   const curseTableBody = document.querySelector('#curse-table tbody');
   const curseHeading = document.getElementById('curse-heading');
+  // Back-compat: older markup used a single-item list with id `randomized-curse`.
+  // Detect it and update it if present to avoid null deref errors from cached/legacy code.
+  const legacyCurseList = document.getElementById('randomized-curse');
 
     function shuffleArray(array) {
       // Fisher-Yates shuffle
@@ -43,39 +46,60 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Render the given array of curses into two columns with 50 rows each
     function renderTableTwoColumns(curseArray) {
-      // Clear existing rows
-      curseTableBody.innerHTML = '';
-
       const rows = 50;
       // Ensure we have exactly rows*2 slots (fill with empty strings if needed)
       const totalNeeded = rows * 2;
-      const filled = curseArray.slice();
-      while (filled.length < totalNeeded) {
-        // If not enough unique curses, pick random ones with replacement
-        const idx = Math.floor(Math.random() * curseArray.length);
-        filled.push(curseArray[idx] || '');
+      let filled = Array.isArray(curseArray) ? curseArray.slice() : [];
+
+      if (filled.length === 0) {
+        // no curses available, fill with empty strings to avoid runtime errors
+        filled = new Array(totalNeeded).fill('');
+      } else {
+        while (filled.length < totalNeeded) {
+          // If not enough unique curses, pick random ones with replacement
+          const idx = Math.floor(Math.random() * curseArray.length);
+          filled.push(curseArray[idx] || '');
+        }
       }
 
-      for (let r = 0; r < rows; r++) {
-        const leftIdx = r;
-        const rightIdx = r + rows;
-        const tr = document.createElement('tr');
+      // Only manipulate the DOM if the table body exists
+      if (curseTableBody) {
+        // Clear existing rows
+        curseTableBody.innerHTML = '';
 
-        const tdLeft = document.createElement('td');
-        const leftNumber = leftIdx < filled.length ? leftIdx + 1 : '';
-        const leftText = leftIdx < filled.length ? filled[leftIdx] : '';
-        tdLeft.innerHTML = leftNumber ? `<strong>${leftNumber}.</strong> ${escapeHtml(leftText)}` : '';
-        tdLeft.style.padding = '6px 8px';
+        for (let r = 0; r < rows; r++) {
+          const leftIdx = r;
+          const rightIdx = r + rows;
+          const tr = document.createElement('tr');
 
-        const tdRight = document.createElement('td');
-        const rightNumber = rightIdx < filled.length ? rightIdx + 1 : '';
-        const rightText = rightIdx < filled.length ? filled[rightIdx] : '';
-        tdRight.innerHTML = rightNumber ? `<strong>${rightNumber}.</strong> ${escapeHtml(rightText)}` : '';
-        tdRight.style.padding = '6px 8px';
+          const tdLeft = document.createElement('td');
+          const leftNumber = leftIdx < filled.length ? leftIdx + 1 : '';
+          const leftText = leftIdx < filled.length ? filled[leftIdx] : '';
+          tdLeft.innerHTML = leftNumber ? `<strong>${leftNumber}.</strong> ${escapeHtml(leftText)}` : '';
+          tdLeft.style.padding = '6px 8px';
 
-        tr.appendChild(tdLeft);
-        tr.appendChild(tdRight);
-        curseTableBody.appendChild(tr);
+          const tdRight = document.createElement('td');
+          const rightNumber = rightIdx < filled.length ? rightIdx + 1 : '';
+          const rightText = rightIdx < filled.length ? filled[rightIdx] : '';
+          tdRight.innerHTML = rightNumber ? `<strong>${rightNumber}.</strong> ${escapeHtml(rightText)}` : '';
+          tdRight.style.padding = '6px 8px';
+
+          tr.appendChild(tdLeft);
+          tr.appendChild(tdRight);
+          curseTableBody.appendChild(tr);
+        }
+      }
+
+      // Update legacy single-curse list (if present) for backwards compatibility.
+      if (legacyCurseList) {
+        try {
+          legacyCurseList.innerHTML = '';
+          const li = document.createElement('li');
+          li.textContent = filled.length > 0 ? filled[0] : 'No curses available.';
+          legacyCurseList.appendChild(li);
+        } catch (e) {
+          console.warn('Could not update legacy curse list:', e);
+        }
       }
     }
 
