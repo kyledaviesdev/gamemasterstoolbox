@@ -31,6 +31,7 @@ body {
     display: block;
     margin: 0 auto;
   }
+  p,
   h1,
   h2,
   h3,
@@ -207,6 +208,32 @@ h1
   height:fit-content;
 }
 
+.actionMenu {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  background-color: var(--primary-color);
+  color: var(--paragraph-color-on-color)
+}
+
+#output {
+  margin-left: 25px;
+  margin-right: 25px;
+  background-color: var(--primary-color);
+  padding: 10px;
+  width: auto;
+  height:fit-content;
+}
+
+#referenceKey {
+  margin-left: 25px;
+  margin-right: 25px;
+  background-color: var(--secondary-color);
+  padding: 10px;
+  width: auto;
+  height:fit-content;
+}
+
 .character {
   display: flex; /* Make the character container a flexbox */
   flex-wrap: wrap; /* Allow elements to wrap on smaller screens */
@@ -248,6 +275,14 @@ h1
 #curse-table {
   width: 100%;
   border-collapse: collapse; /* ensure borders are shared */
+}
+
+#storyGen {
+  margin: 10px;
+  padding-bottom: 5px;
+  padding-left: 3px;
+  padding-right: 3px;
+  background-color: var(--secondary-color);
 }
 
 #curse-table th,

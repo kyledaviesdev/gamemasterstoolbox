@@ -1,6 +1,6 @@
-import jobs from "./storymastersclasses.mjs";
-import species from "./storymastersspecies.mjs";
-import backgrounds from "./storymastersbackgrounds.mjs";
+import jobs from "../storymastersclasses.mjs";
+import species from "../storymastersspecies.mjs";
+import backgrounds from "../storymastersbackgrounds.mjs";
 let characters = [];
 let n = 0;
 

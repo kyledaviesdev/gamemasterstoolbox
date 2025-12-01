@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Randomizer</title>
+    <link rel="stylesheet" type="text/css" href="../../storymasters.css">
+    <script src="../../storymasters.js" defer></script>
+    <script src="CharacterRandomizer.js" defer></script>
+</head>
+<body>
+    <nav id="menuNav">
+        <div id="menuBar">
+            <a href="../../index.html">Home</a>
+            <a href="../../CharacterTracker/character-tracker.html">Character Tracker</a>
+            <a href="CharacterRandomizer.html">Character Randomizer</a>
+            <a href="../../FeyCurseRandomizer/fey-curse-randomizer.html">Fey Curse Generator</a>
+            <a href="../../Storytellers/oneShotAdventures.html">Storytellers</a>
+        </div>
+        <div class="dropdown">
+            <button id="hamburgerBtn" onclick="hamburgerMenu()" class="dropbtn">&#9776;</button>
+            <div id="hamburgerMenu" class="dropdown-content">
+                <a href="../../index.html">Home</a>
+                <a href="../../CharacterTracker/character-tracker.html">Character Tracker</a>
+                <a href="CharacterRandomizer.html">Character Randomizer</a>
+                <a href="../../FeyCurseRandomizer/fey-curse-randomizer.html">Fey Curse Generator</a>
+                <a href="../../Storytellers/oneShotAdventures.html">Storytellers</a>
+            </div>
+        </div>
+    </nav>
+    <h1>Character Randomizer</h1>
+    <p class="actionMenu">
+        Choose what to randomize and how many results to produce.
+    </p>
+    <div class="controls">
+        <label for="actionSelect">Action:</label>
+        <select id="actionSelect">
+            <option value="1">1 — Everything</option>
+            <option value="2">2 — Race</option>
+            <option value="3">3 — Class</option>
+            <option value="4">4 — Background</option>
+            <option value="5">5 — Race &amp; Class</option>
+            <option value="6">6 — Race &amp; Background</option>
+            <option value="7">7 — Class &amp; Background</option>
+            <option value="8">8 — Maximize (match Class prefs)</option>
+        </select>
+        <label for="classFilter" style="margin-left:8px">Class filter:</label>
+        <input id="classFilter" list="classList" type="text" placeholder="Optional, e.g. Warden or subclass" style="width:12ch; margin-left:4px">
+        <datalist id="classList"></datalist>
+        <label for="quantity" style="margin-left:8px">Count:</label>
+        <input id="quantity" type="number" min="1" max="100" value="1" style="width:4ch; margin-left:4px">
+        <button type="button" id="buttonID" style="margin-left:8px">Generate</button>
+    </div>
+    <div id="status" style="margin-top:8px;color:var(--accent-color,#333);font-weight:bold"></div>
+    <div id="output">
+        Race: <br>
+        Subrace: <br>
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<br>
+        Class: <br>
+        Subclass: <br>
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<br>
+        Background: 
+    </div>
+    <h2>Reference Key</h2>
+    <p id="referenceKey">
+        Eberron Rising - ^ <br>
+        The Elements & Beyond - ① <br>
+        Fizban - ② <br>
+        Mordekainen - ③ <br>
+        Mythic Odysseys - ④ <br>
+        Player's Handbook -  <br>
+        Ravenloft - ⑤ <br>
+        Ravenica - ~ <br>
+        Strixhaven - ⑥ <br>
+        Spelljammer - !
+        Sword Coast - ⑦ <br>
+        Tasha's Cauldron - ⑧ <br>
+        Valda's Spire - ⑨ <br>
+        Wildemount - ⑩ <br>
+        Wild Beyond the Witchlight - ⨉ <br>
+        Xanthar's Guide - *
+    </p>
+</body>
+</html>

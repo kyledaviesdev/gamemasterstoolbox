@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storytellers</title>
+    <link type="text/css" rel="stylesheet" href="../storymasters.css" />
+    <script src="../storymasters.js" defer></script>
+    <script src="oneShotRandomizer.js" defer></script>
+</head>
+<body>
+    <header id="title">
+        <img src="Storytellers_Logo.png" alt="StoryTellers_Logo" class="logo">
+        <h1>Storytellers</h1>
+    </header>
+    <nav id="menuNav">
+        <div id="menuBar">
+            <a href="../index.html">Home</a>
+            <a href="../CharacterRandomizer/CharacterRandomizer-master/CharacterRandomizer.html">Character Randomizer</a>
+            <a href="../CharacterTracker/character-tracker.html">Character Tracker</a>
+            <a href="../FeyCurseRandomizer/fey-curse-randomizer.html">Fey Curse Generator</a>
+            <a href="oneShotAdventures.html">One Shot Adventures</a>
+        </div>
+        <div class="dropdown">
+            <button id="hamburgerBtn" onclick="hamburgerMenu()" class="dropbtn">&#9776;</button>
+                <div id="hamburgerMenu" class="dropdown-content">
+                <a href="../index.html">Home</a>
+                <a href="../CharacterRandomizer/CharacterRandomizer-master/CharacterRandomizer.html">Character Randomizer</a>
+                <a href="../CharacterTracker/character-tracker.html">Character Tracker</a>
+                <a href="../FeyCurseRandomizer/fey-curse-randomizer.html">Fey Curse Generator</a>
+                <a href="oneShotAdventures.html">One Shot Adventures</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="section" id="storyGen">
+        <div class="story">
+        
+        </div>
+        <button class="refresh">New Story</button>
+    </div>
+</body>
+</html>
