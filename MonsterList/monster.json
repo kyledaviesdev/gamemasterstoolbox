@@ -1,0 +1,2606 @@
+[
+  {
+    "name": "Aarakocra",
+    "cr": "1/4",
+    "type": "Humanoid (aarakocra)",
+    "biomes": ["Mountain"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Abjurer Wizard",
+    "cr": "9",
+    "type": "Humanoid",
+    "biomes": ["Urban"],
+    "source": "Monsters of the Multiverse"
+  },
+  {
+    "name": "Aboleth",
+    "cr": "10",
+    "type": "Aberration",
+    "biomes": ["Underdark", "Underwater"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Adult Kruthik",
+    "cr": "2",
+    "type": "Monstrosity",
+    "biomes": ["Desert", "Mountain", "Underdark"],
+    "source": "Monsters of the Multiverse"
+  },
+  {
+    "name": "Androsphinx",
+    "cr": "17",
+    "type": "Monstrosity",
+    "biomes": ["Desert"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Ankheg",
+    "cr": "2",
+    "type": "Monstrosity",
+    "biomes": ["Forest", "Grassland"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Ankylosaurus",
+    "cr": "3",
+    "type": "Beast",
+    "biomes": ["Forest", "Grassland"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Azer",
+    "cr": "2",
+    "type": "Elemental",
+    "biomes": ["Mountain", "Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Banshee",
+    "cr": "4",
+    "type": "Undead",
+    "biomes": ["Coastal", "Forest", "Swamp", "Urban"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Basilisk",
+    "cr": "3",
+    "type": "Monstrosity",
+    "biomes": ["Desert", "Forest", "Grassland", "Mountain", "Swamp", "Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Behir",
+    "cr": "11",
+    "type": "Monstrosity",
+    "biomes": ["Mountain", "Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Beholder",
+    "cr": "13",
+    "type": "Aberration",
+    "biomes": ["Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Boggle",
+    "cr": "1/8",
+    "type": "Fey",
+    "biomes": ["Forest", "Hill", "Underdark", "Urban"],
+    "source": "Monsters of the Multiverse"
+  },
+  {
+    "name": "Bugbear",
+    "cr": "1",
+    "type": "Humanoid (goblinoid)",
+    "biomes": ["Forest", "Grassland", "Mountain", "Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Bulette",
+    "cr": "5",
+    "type": "Monstrosity",
+    "biomes": ["Desert", "Grassland", "Hill", "Mountain"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Cambion",
+    "cr": "5",
+    "type": "Fiend",
+    "biomes": ["Urban", "Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Carrion Crawler",
+    "cr": "2",
+    "type": "Monstrosity",
+    "biomes": ["Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Choker",
+    "cr": "1",
+    "type": "Aberration",
+    "biomes": ["Forest", "Mountain", "Underdark"],
+    "source": "Monsters of the Multiverse"
+  },
+  {
+    "name": "Chuul",
+    "cr": "4",
+    "type": "Aberration",
+    "biomes": ["Coastal", "Swamp", "Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Darkmantle",
+    "cr": "1/2",
+    "type": "Monstrosity",
+    "biomes": ["Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Darkling",
+    "cr": "1/2",
+    "type": "Fey",
+    "biomes": ["Forest", "Swamp", "Underdark", "Urban"],
+    "source": "Monsters of the Multiverse"
+  },
+  {
+    "name": "Death Dog",
+    "cr": "1",
+    "type": "Monstrosity",
+    "biomes": ["Desert", "Grassland", "Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Death Knight",
+    "cr": "17",
+    "type": "Undead",
+    "biomes": ["Underdark", "Urban"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Demilich",
+    "cr": "18",
+    "type": "Undead",
+    "biomes": ["Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Displacer Beast",
+    "cr": "3",
+    "type": "Monstrosity",
+    "biomes": ["Forest", "Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Dolphin Delighter",
+    "cr": "3",
+    "type": "Fey",
+    "biomes": ["Coastal", "Underwater"],
+    "source": "Monsters of the Multiverse"
+  },
+  {
+    "name": "Doppelganger",
+    "cr": "3",
+    "type": "Monstrosity (shapechanger)",
+    "biomes": ["Urban"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Dracolich (Adult Blue)",
+    "cr": "17",
+    "type": "Undead",
+    "biomes": ["Coastal", "Desert", "Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Dragon Turtle",
+    "cr": "17",
+    "type": "Dragon",
+    "biomes": ["Underwater"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Drider",
+    "cr": "6",
+    "type": "Monstrosity",
+    "biomes": ["Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Dryad",
+    "cr": "1",
+    "type": "Fey",
+    "biomes": ["Forest"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Duergar",
+    "cr": "1",
+    "type": "Humanoid (dwarf)",
+    "biomes": ["Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Elemental (Fire)",
+    "cr": "5",
+    "type": "Elemental",
+    "biomes": ["Desert", "Mountain", "Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Empyrean",
+    "cr": "23",
+    "type": "Celestial",
+    "biomes": ["Any"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Ettercap",
+    "cr": "2",
+    "type": "Monstrosity",
+    "biomes": ["Forest"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Ettin",
+    "cr": "4",
+    "type": "Giant",
+    "biomes": ["Hill", "Mountain", "Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Flameskull",
+    "cr": "4",
+    "type": "Undead",
+    "biomes": ["Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Flumph",
+    "cr": "1/8",
+    "type": "Aberration",
+    "biomes": ["Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Fomorian",
+    "cr": "8",
+    "type": "Giant",
+    "biomes": ["Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Galeb Duhr",
+    "cr": "6",
+    "type": "Elemental",
+    "biomes": ["Mountain"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Gargoyle",
+    "cr": "2",
+    "type": "Elemental",
+    "biomes": ["Underdark", "Urban"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Ghast",
+    "cr": "2",
+    "type": "Undead",
+    "biomes": ["Swamp", "Underdark", "Urban"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Ghost",
+    "cr": "4",
+    "type": "Undead",
+    "biomes": ["Urban", "Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Ghoul",
+    "cr": "1",
+    "type": "Undead",
+    "biomes": ["Swamp", "Underdark", "Urban"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Giant Strider",
+    "cr": "1",
+    "type": "Monstrosity",
+    "biomes": ["Hill", "Mountain", "Underdark"],
+    "source": "Monsters of the Multiverse"
+  },
+  {
+    "name": "Gnoll Hunter",
+    "cr": "1/2",
+    "type": "Monstrosity",
+    "biomes": ["Arctic", "Forest", "Grassland", "Hill"],
+    "source": "Monsters of the Multiverse"
+  },
+  {
+    "name": "Harpy",
+    "cr": "1",
+    "type": "Monstrosity",
+    "biomes": ["Coastal"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Hell Hound",
+    "cr": "3",
+    "type": "Fiend",
+    "biomes": ["Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Helmed Horror",
+    "cr": "4",
+    "type": "Construct",
+    "biomes": ["Urban", "Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Hippogriff",
+    "cr": "1",
+    "type": "Monstrosity",
+    "biomes": ["Hill", "Mountain"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Hobgoblin",
+    "cr": "1/2",
+    "type": "Humanoid (goblinoid)",
+    "biomes": ["Forest", "Grassland", "Hill", "Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Homunculus",
+    "cr": "0",
+    "type": "Construct",
+    "biomes": ["Urban"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Hook Horror",
+    "cr": "3",
+    "type": "Monstrosity",
+    "biomes": ["Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Hydra",
+    "cr": "8",
+    "type": "Monstrosity",
+    "biomes": ["Coastal", "Swamp", "Underwater"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Intellect Devourer",
+    "cr": "2",
+    "type": "Aberration",
+    "biomes": ["Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Invisible Stalker",
+    "cr": "6",
+    "type": "Elemental",
+    "biomes": ["Urban"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Jackalwere",
+    "cr": "1/2",
+    "type": "Humanoid (shapechanger)",
+    "biomes": ["Desert", "Grassland"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Kenku",
+    "cr": "1/4",
+    "type": "Humanoid (kenku)",
+    "biomes": ["Urban"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Kobold",
+    "cr": "1/8",
+    "type": "Humanoid (kobold)",
+    "biomes": ["Forest", "Hill", "Mountain", "Swamp", "Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Kraken",
+    "cr": "23",
+    "type": "Monstrosity",
+    "biomes": ["Underwater"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Kuo-toa",
+    "cr": "1/4",
+    "type": "Humanoid (kuo-toa)",
+    "biomes": ["Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Lamia",
+    "cr": "4",
+    "type": "Monstrosity",
+    "biomes": ["Desert"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Lich",
+    "cr": "21",
+    "type": "Undead",
+    "biomes": ["Underdark", "Urban"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Lizardfolk",
+    "cr": "1/2",
+    "type": "Humanoid (lizardfolk)",
+    "biomes": ["Coastal", "Swamp"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Manticore",
+    "cr": "3",
+    "type": "Monstrosity",
+    "biomes": ["Coastal", "Desert", "Hill", "Mountain"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Meazel",
+    "cr": "1",
+    "type": "Monstrosity",
+    "biomes": ["Desert", "Forest", "Grassland", "Hill", "Mountain", "Swamp", "Underdark", "Urban"],
+    "source": "Monsters of the Multiverse"
+  },
+  {
+    "name": "Medusa",
+    "cr": "6",
+    "type": "Monstrosity",
+    "biomes": ["Desert", "Mountain", "Underdark", "Urban"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Merfolk",
+    "cr": "1/8",
+    "type": "Humanoid (merfolk)",
+    "biomes": ["Coastal", "Underwater"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Merrow",
+    "cr": "2",
+    "type": "Monstrosity",
+    "biomes": ["Coastal", "Underwater"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Mimic",
+    "cr": "2",
+    "type": "Monstrosity (shapechanger)",
+    "biomes": ["Underdark", "Urban"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Mind Flayer",
+    "cr": "7",
+    "type": "Aberration",
+    "biomes": ["Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Minotaur",
+    "cr": "3",
+    "type": "Monstrosity",
+    "biomes": ["Underdark", "Labyrinth"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Mummy",
+    "cr": "3",
+    "type": "Undead",
+    "biomes": ["Desert", "Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Myconid Adult",
+    "cr": "1/2",
+    "type": "Plant",
+    "biomes": ["Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Naga (Bone)",
+    "cr": "4",
+    "type": "Undead",
+    "biomes": ["Underdark", "Urban"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Naga (Guardian)",
+    "cr": "10",
+    "type": "Celestial",
+    "biomes": ["Forest", "Urban"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Naga (Spirit)",
+    "cr": "8",
+    "type": "Monstrosity",
+    "biomes": ["Swamp", "Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Nightmare",
+    "cr": "3",
+    "type": "Fiend",
+    "biomes": ["Underdark", "Urban"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Nilbog",
+    "cr": "1",
+    "type": "Fey",
+    "biomes": ["Forest", "Hill", "Underdark"],
+    "source": "Monsters of the Multiverse"
+  },
+  {
+    "name": "Nothic",
+    "cr": "2",
+    "type": "Aberration",
+    "biomes": ["Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Ogre",
+    "cr": "2",
+    "type": "Giant",
+    "biomes": ["Coastal", "Desert", "Forest", "Grassland", "Hill", "Mountain", "Swamp", "Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Oni",
+    "cr": "7",
+    "type": "Giant",
+    "biomes": ["Forest", "Urban"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Otyugh",
+    "cr": "5",
+    "type": "Aberration",
+    "biomes": ["Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Owlbear",
+    "cr": "3",
+    "type": "Monstrosity",
+    "biomes": ["Forest"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Pegasus",
+    "cr": "2",
+    "type": "Celestial",
+    "biomes": ["Coastal", "Grassland", "Hill", "Mountain"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Peryton",
+    "cr": "2",
+    "type": "Monstrosity",
+    "biomes": ["Mountain"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Pixie",
+    "cr": "1/4",
+    "type": "Fey",
+    "biomes": ["Forest"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Pseudodragon",
+    "cr": "1/4",
+    "type": "Dragon",
+    "biomes": ["Forest", "Urban"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Quickling",
+    "cr": "1",
+    "type": "Fey",
+    "biomes": ["Forest"],
+    "source": "Monsters of the Multiverse"
+  },
+  {
+    "name": "Rakshasa",
+    "cr": "13",
+    "type": "Fiend",
+    "biomes": ["Urban"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Remorhaz",
+    "cr": "11",
+    "type": "Monstrosity",
+    "biomes": ["Arctic"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Revenant",
+    "cr": "5",
+    "type": "Undead",
+    "biomes": ["Urban"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Roc",
+    "cr": "11",
+    "type": "Monstrosity",
+    "biomes": ["Coastal", "Desert", "Hill", "Mountain"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Roper",
+    "cr": "5",
+    "type": "Monstrosity",
+    "biomes": ["Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Sahuagin",
+    "cr": "1/2",
+    "type": "Humanoid (sahuagin)",
+    "biomes": ["Coastal", "Underwater"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Salamander",
+    "cr": "5",
+    "type": "Elemental",
+    "biomes": ["Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Satyr",
+    "cr": "1/2",
+    "type": "Fey",
+    "biomes": ["Forest"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Scarecrow",
+    "cr": "1",
+    "type": "Construct",
+    "biomes": ["Urban"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Sea Spawn",
+    "cr": "1",
+    "type": "Monstrosity",
+    "biomes": ["Coastal", "Underwater"],
+    "source": "Monsters of the Multiverse"
+  },
+  {
+    "name": "Shadow",
+    "cr": "1/2",
+    "type": "Undead",
+    "biomes": ["Underdark", "Urban"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Shambling Mound",
+    "cr": "5",
+    "type": "Plant",
+    "biomes": ["Forest", "Swamp"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Shield Guardian",
+    "cr": "7",
+    "type": "Construct",
+    "biomes": ["Urban"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Skeleton",
+    "cr": "1/4",
+    "type": "Undead",
+    "biomes": ["Underdark", "Urban"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Skulk",
+    "cr": "1/2",
+    "type": "Monstrosity",
+    "biomes": ["Coastal", "Forest", "Swamp", "Underdark", "Urban"],
+    "source": "Monsters of the Multiverse"
+  },
+  {
+    "name": "Specter",
+    "cr": "1",
+    "type": "Undead",
+    "biomes": ["Underdark", "Urban"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Sprite",
+    "cr": "1/4",
+    "type": "Fey",
+    "biomes": ["Forest"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Stirge",
+    "cr": "1/8",
+    "type": "Beast",
+    "biomes": ["Forest", "Swamp", "Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Succubus/Incubus",
+    "cr": "4",
+    "type": "Fiend",
+    "biomes": ["Urban", "Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Tarrasque",
+    "cr": "30",
+    "type": "Monstrosity",
+    "biomes": ["Any"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Thri-kreen",
+    "cr": "1",
+    "type": "Humanoid (thri-kreen)",
+    "biomes": ["Desert", "Grassland"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Tortle",
+    "cr": "1/4",
+    "type": "Humanoid",
+    "biomes": ["Coastal"],
+    "source": "Monsters of the Multiverse"
+  },
+  {
+    "name": "Treant",
+    "cr": "9",
+    "type": "Plant",
+    "biomes": ["Forest"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Troglodyte",
+    "cr": "1/4",
+    "type": "Humanoid (troglodyte)",
+    "biomes": ["Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Troll",
+    "cr": "5",
+    "type": "Giant",
+    "biomes": ["Arctic", "Forest", "Hill", "Mountain", "Swamp", "Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Umber Hulk",
+    "cr": "5",
+    "type": "Monstrosity",
+    "biomes": ["Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Unicorn",
+    "cr": "5",
+    "type": "Celestial",
+    "biomes": ["Forest"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Vampire",
+    "cr": "13",
+    "type": "Undead",
+    "biomes": ["Urban", "Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Vargouille",
+    "cr": "1",
+    "type": "Fiend",
+    "biomes": ["Desert", "Swamp", "Underdark"],
+    "source": "Monsters of the Multiverse"
+  },
+  {
+    "name": "Water Weird",
+    "cr": "3",
+    "type": "Elemental",
+    "biomes": ["Underdark", "Underwater"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Wight",
+    "cr": "3",
+    "type": "Undead",
+    "biomes": ["Arctic", "Desert", "Swamp", "Underdark", "Urban"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Will-o'-Wisp",
+    "cr": "2",
+    "type": "Undead",
+    "biomes": ["Swamp"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Wood Woad",
+    "cr": "5",
+    "type": "Plant",
+    "biomes": ["Forest"],
+    "source": "Monsters of the Multiverse"
+  },
+  {
+    "name": "Wraith",
+    "cr": "5",
+    "type": "Undead",
+    "biomes": ["Underdark", "Urban"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Wyvern",
+    "cr": "6",
+    "type": "Dragon",
+    "biomes": ["Hill", "Mountain"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Xorn",
+    "cr": "3",
+    "type": "Elemental",
+    "biomes": ["Underdark", "Mountain"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Yeti",
+    "cr": "3",
+    "type": "Monstrosity",
+    "biomes": ["Arctic", "Mountain"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Yuan-ti Abomination",
+    "cr": "7",
+    "type": "Monstrosity (shapechanger)",
+    "biomes": ["Desert", "Forest", "Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Yuan-ti Malison",
+    "cr": "3",
+    "type": "Monstrosity (shapechanger)",
+    "biomes": ["Desert", "Forest", "Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Zaratan",
+    "cr": "22",
+    "type": "Elemental",
+    "biomes": ["Desert", "Forest", "Grassland", "Hill", "Mountain", "Underdark"],
+    "source": "Monsters of the Multiverse"
+  },
+  {
+    "name": "Zariel",
+    "cr": "26",
+    "type": "Fiend",
+    "biomes": ["Hells"],
+    "source": "Monsters of the Multiverse"
+  },
+  {
+    "name": "Zombie",
+    "cr": "1/4",
+    "type": "Undead",
+    "biomes": ["Underdark", "Urban"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Aartuk Elder",
+    "cr": "3",
+    "type": "Large Plant",
+    "biomes": ["Wildspace", "Astral Sea"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Aartuk Priest",
+    "cr": "2",
+    "type": "Medium Plant",
+    "biomes": ["Wildspace", "Astral Sea"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Aartuk Warrior",
+    "cr": "2",
+    "type": "Medium Plant",
+    "biomes": ["Wildspace", "Astral Sea"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Astral Elf Aristocrat",
+    "cr": "8",
+    "type": "Medium Humanoid (Elf)",
+    "biomes": ["Astral Sea", "Wildspace", "Urban"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Astral Elf Commander",
+    "cr": "7",
+    "type": "Medium Humanoid (Elf)",
+    "biomes": ["Astral Sea", "Wildspace", "Urban"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Astral Elf Honor Guard",
+    "cr": "5",
+    "type": "Medium Humanoid (Elf)",
+    "biomes": ["Astral Sea", "Wildspace", "Urban"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Astral Elf Star Priest",
+    "cr": "4",
+    "type": "Medium Humanoid (Elf)",
+    "biomes": ["Astral Sea", "Wildspace", "Urban"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Astral Elf Warrior",
+    "cr": "3",
+    "type": "Medium Humanoid (Elf)",
+    "biomes": ["Astral Sea", "Wildspace", "Urban"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Autognome",
+    "cr": "2",
+    "type": "Small Construct",
+    "biomes": ["Wildspace", "Urban"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Braxat",
+    "cr": "9",
+    "type": "Huge Giant",
+    "biomes": ["Wildspace", "Astral Sea", "Desert"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "B'rohg",
+    "cr": "6",
+    "type": "Huge Giant",
+    "biomes": ["Wildspace", "Astral Sea", "Desert", "Mountain"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Chwinga Astronaut",
+    "cr": "0",
+    "type": "Tiny Elemental",
+    "biomes": ["Wildspace"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Cosmic Horror",
+    "cr": "18",
+    "type": "Gargantuan Aberration",
+    "biomes": ["Wildspace", "Astral Sea"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Dohwar",
+    "cr": "0",
+    "type": "Small Fey",
+    "biomes": ["Wildspace", "Astral Sea", "Urban"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Esthetic",
+    "cr": "12",
+    "type": "Gargantuan Aberration",
+    "biomes": ["Wildspace", "Astral Sea"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Eye Monger",
+    "cr": "10",
+    "type": "Gargantuan Aberration",
+    "biomes": ["Wildspace"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Feyr",
+    "cr": "5",
+    "type": "Large Aberration",
+    "biomes": ["Wildspace", "Astral Sea", "Urban"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Gaj",
+    "cr": "4",
+    "type": "Medium Aberration",
+    "biomes": ["Wildspace", "Astral Sea", "Desert"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Giff Shipmate",
+    "cr": "3",
+    "type": "Medium Humanoid",
+    "biomes": ["Wildspace", "Astral Sea", "Urban"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Giff Shock Trooper",
+    "cr": "6",
+    "type": "Medium Humanoid",
+    "biomes": ["Wildspace", "Astral Sea", "Urban"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Giff Warlord",
+    "cr": "10",
+    "type": "Medium Humanoid",
+    "biomes": ["Wildspace", "Astral Sea", "Urban"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Githyanki Buccaneer",
+    "cr": "3",
+    "type": "Medium Humanoid (Gith)",
+    "biomes": ["Wildspace", "Astral Sea", "Urban"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Githyanki Star Seer",
+    "cr": "7",
+    "type": "Medium Humanoid (Gith)",
+    "biomes": ["Wildspace", "Astral Sea", "Urban"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Githyanki Xenomancer",
+    "cr": "9",
+    "type": "Medium Humanoid (Gith)",
+    "biomes": ["Wildspace", "Astral Sea", "Urban"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Hadozee Shipmate",
+    "cr": "1/8",
+    "type": "Medium Humanoid",
+    "biomes": ["Wildspace", "Astral Sea", "Urban"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Hadozee Warrior",
+    "cr": "1/2",
+    "type": "Medium Humanoid",
+    "biomes": ["Wildspace", "Astral Sea", "Urban"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Hadozee Explorer",
+    "cr": "2",
+    "type": "Medium Humanoid",
+    "biomes": ["Wildspace", "Astral Sea", "Urban"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Jammer Leech",
+    "cr": "1",
+    "type": "Large Plant",
+    "biomes": ["Wildspace"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Kindori",
+    "cr": "7",
+    "type": "Gargantuan Celestial",
+    "biomes": ["Wildspace", "Astral Sea"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Lunar Dragon Wyrmling",
+    "cr": "2",
+    "type": "Medium Dragon",
+    "biomes": ["Wildspace", "Astral Sea"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Young Lunar Dragon",
+    "cr": "7",
+    "type": "Large Dragon",
+    "biomes": ["Wildspace", "Astral Sea"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Adult Lunar Dragon",
+    "cr": "13",
+    "type": "Huge Dragon",
+    "biomes": ["Wildspace", "Astral Sea"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Ancient Lunar Dragon",
+    "cr": "19",
+    "type": "Gargantuan Dragon",
+    "biomes": ["Wildspace", "Astral Sea"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Megapede",
+    "cr": "11",
+    "type": "Gargantuan Monstrosity",
+    "biomes": ["Wildspace", "Astral Sea", "Desert"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Mercane",
+    "cr": "5",
+    "type": "Large Giant",
+    "biomes": ["Wildspace", "Astral Sea", "Urban"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Murder Comet",
+    "cr": "5",
+    "type": "Large Elemental",
+    "biomes": ["Wildspace"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Neh-thalggu (Brain Collector)",
+    "cr": "4",
+    "type": "Large Aberration",
+    "biomes": ["Wildspace", "Astral Sea"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Neogi Hatchling Swarm",
+    "cr": "3",
+    "type": "Large Swarm of Tiny Aberrations",
+    "biomes": ["Wildspace", "Astral Sea", "Urban"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Neogi Pirate",
+    "cr": "3",
+    "type": "Small Aberration",
+    "biomes": ["Wildspace", "Astral Sea", "Urban"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Neogi Void Hunter",
+    "cr": "4",
+    "type": "Small Aberration",
+    "biomes": ["Wildspace", "Astral Sea", "Urban"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Plasmoid Explorer",
+    "cr": "1/4",
+    "type": "Small or Medium Ooze",
+    "biomes": ["Wildspace", "Astral Sea", "Urban"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Plasmoid Warrior",
+    "cr": "3",
+    "type": "Medium Ooze",
+    "biomes": ["Wildspace", "Astral Sea", "Urban"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Plasmoid Boss",
+    "cr": "4",
+    "type": "Medium Ooze",
+    "biomes": ["Wildspace", "Astral Sea", "Urban"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Psurlon Ringer",
+    "cr": "1",
+    "type": "Medium Aberration",
+    "biomes": ["Astral Sea", "Wildspace", "Urban"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Psurlon",
+    "cr": "2",
+    "type": "Medium Aberration",
+    "biomes": ["Astral Sea", "Wildspace"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Psurlon Leader",
+    "cr": "6",
+    "type": "Medium Aberration",
+    "biomes": ["Astral Sea", "Wildspace"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Reigar",
+    "cr": "8",
+    "type": "Medium Celestial",
+    "biomes": ["Wildspace", "Astral Sea"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Gray Scavver",
+    "cr": "1/4",
+    "type": "Small Monstrosity",
+    "biomes": ["Wildspace"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Brown Scavver",
+    "cr": "4",
+    "type": "Medium Monstrosity",
+    "biomes": ["Wildspace"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Night Scavver",
+    "cr": "5",
+    "type": "Medium Monstrosity",
+    "biomes": ["Wildspace"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Void Scavver",
+    "cr": "11",
+    "type": "Large Monstrosity",
+    "biomes": ["Wildspace"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Solar Dragon Wyrmling",
+    "cr": "3",
+    "type": "Medium Dragon",
+    "biomes": ["Wildspace", "Astral Sea"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Young Solar Dragon",
+    "cr": "8",
+    "type": "Large Dragon",
+    "biomes": ["Wildspace", "Astral Sea"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Adult Solar Dragon",
+    "cr": "14",
+    "type": "Huge Dragon",
+    "biomes": ["Wildspace", "Astral Sea"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Ancient Solar Dragon",
+    "cr": "20",
+    "type": "Gargantuan Dragon",
+    "biomes": ["Wildspace", "Astral Sea"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Space Clown",
+    "cr": "2",
+    "type": "Medium Fiend",
+    "biomes": ["Wildspace", "Urban"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Space Eel",
+    "cr": "1/2",
+    "type": "Medium Beast",
+    "biomes": ["Wildspace"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Space Guppy",
+    "cr": "0",
+    "type": "Small Beast",
+    "biomes": ["Wildspace"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Space Hamster",
+    "cr": "1/4",
+    "type": "Small Monstrosity",
+    "biomes": ["Wildspace", "Forest"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Giant Space Hamster",
+    "cr": "1/4",
+    "type": "Large Beast",
+    "biomes": ["Wildspace", "Forest"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Space Mollymawk",
+    "cr": "0",
+    "type": "Small Beast",
+    "biomes": ["Wildspace"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Space Swine",
+    "cr": "1/4",
+    "type": "Medium Beast",
+    "biomes": ["Wildspace"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Ssurran Poisoner",
+    "cr": "1/2",
+    "type": "Medium Monstrosity",
+    "biomes": ["Desert", "Wildspace"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Ssurran Defiler",
+    "cr": "3",
+    "type": "Medium Monstrosity",
+    "biomes": ["Desert", "Wildspace"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Starlight Apparition",
+    "cr": "5",
+    "type": "Medium Celestial",
+    "biomes": ["Astral Sea"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Thri-kreen Hunter",
+    "cr": "2",
+    "type": "Medium Monstrosity",
+    "biomes": ["Desert", "Wildspace", "Grassland"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Thri-kreen Mystic",
+    "cr": "5",
+    "type": "Medium Monstrosity",
+    "biomes": ["Desert", "Wildspace", "Grassland"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Thri-kreen Gladiator",
+    "cr": "7",
+    "type": "Medium Monstrosity",
+    "biomes": ["Desert", "Wildspace", "Grassland"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Vampirate",
+    "cr": "2",
+    "type": "Medium Undead",
+    "biomes": ["Wildspace", "Coastal"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Vampirate Mage",
+    "cr": "5",
+    "type": "Medium Undead",
+    "biomes": ["Wildspace", "Coastal"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Vampirate Captain",
+    "cr": "6",
+    "type": "Medium Undead",
+    "biomes": ["Wildspace", "Coastal"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Zodar",
+    "cr": "16",
+    "type": "Medium Aberration",
+    "biomes": ["Wildspace", "Astral Sea"],
+    "source": "Boo's Astral Menagerie"
+  },
+  {
+    "name": "Ancient Black Dragon",
+    "cr": "21",
+    "type": "Gargantuan Dragon",
+    "biomes": ["Swamp"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Adult Black Dragon",
+    "cr": "14",
+    "type": "Huge Dragon",
+    "biomes": ["Swamp"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Young Black Dragon",
+    "cr": "7",
+    "type": "Large Dragon",
+    "biomes": ["Swamp"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Black Dragon Wyrmling",
+    "cr": "2",
+    "type": "Medium Dragon",
+    "biomes": ["Swamp"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Beholder (Lair Variant)",
+    "cr": "14",
+    "type": "Large Aberration",
+    "biomes": ["Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Death Tyrant",
+    "cr": "14",
+    "type": "Large Undead",
+    "biomes": ["Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Spectator",
+    "cr": "3",
+    "type": "Medium Aberration",
+    "biomes": ["Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Bugbear Chief",
+    "cr": "3",
+    "type": "Medium Humanoid (goblinoid)",
+    "biomes": ["Forest", "Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Cambion",
+    "cr": "5",
+    "type": "Medium Fiend",
+    "biomes": ["Urban", "Hells", "Abyss"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Drow Elite Warrior",
+    "cr": "5",
+    "type": "Medium Humanoid (elf)",
+    "biomes": ["Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Drow Mage",
+    "cr": "7",
+    "type": "Medium Humanoid (elf)",
+    "biomes": ["Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Drow Priestess of Lolth",
+    "cr": "8",
+    "type": "Medium Humanoid (elf)",
+    "biomes": ["Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Ghast",
+    "cr": "2",
+    "type": "Medium Undead",
+    "biomes": ["Swamp", "Underdark", "Urban"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Gnoll Pack Lord",
+    "cr": "2",
+    "type": "Medium Humanoid (gnoll)",
+    "biomes": ["Desert", "Forest", "Grassland", "Hill"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Gnoll Fang of Yeenoghu",
+    "cr": "4",
+    "type": "Medium Fiend",
+    "biomes": ["Desert", "Forest", "Grassland", "Hill"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Hobgoblin Captain",
+    "cr": "3",
+    "type": "Medium Humanoid (goblinoid)",
+    "biomes": ["Forest", "Grassland", "Hill"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Hobgoblin Warlord",
+    "cr": "6",
+    "type": "Medium Humanoid (goblinoid)",
+    "biomes": ["Forest", "Grassland", "Hill"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Lizard King/Queen",
+    "cr": "4",
+    "type": "Medium Humanoid (lizardfolk)",
+    "biomes": ["Swamp"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Lizardfolk Shaman",
+    "cr": "2",
+    "type": "Medium Humanoid (lizardfolk)",
+    "biomes": ["Swamp"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Orc Eye of Gruumsh",
+    "cr": "2",
+    "type": "Medium Humanoid (orc)",
+    "biomes": ["Arctic", "Desert", "Forest", "Grassland", "Hill", "Mountain"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Orc War Chief",
+    "cr": "4",
+    "type": "Medium Humanoid (orc)",
+    "biomes": ["Arctic", "Desert", "Forest", "Grassland", "Hill", "Mountain"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Orog",
+    "cr": "2",
+    "type": "Medium Humanoid (orc)",
+    "biomes": ["Underdark", "Mountain"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Sahuagin Priestess",
+    "cr": "2",
+    "type": "Medium Humanoid (sahuagin)",
+    "biomes": ["Underwater", "Coastal"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Sahuagin Baron",
+    "cr": "5",
+    "type": "Large Humanoid (sahuagin)",
+    "biomes": ["Underwater", "Coastal"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Vampire Spawn",
+    "cr": "5",
+    "type": "Medium Undead",
+    "biomes": ["Urban", "Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Yuan-ti Malison (Type 1, 2, or 3)",
+    "cr": "3",
+    "type": "Medium Monstrosity (shapechanger)",
+    "biomes": ["Desert", "Forest", "Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Abominable Yeti",
+    "cr": "9",
+    "type": "Huge Monstrosity",
+    "biomes": ["Arctic", "Mountain"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Ancient White Dragon",
+    "cr": "20",
+    "type": "Gargantuan Dragon",
+    "biomes": ["Arctic"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Adult White Dragon",
+    "cr": "13",
+    "type": "Huge Dragon",
+    "biomes": ["Arctic"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Young White Dragon",
+    "cr": "6",
+    "type": "Large Dragon",
+    "biomes": ["Arctic"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "White Dragon Wyrmling",
+    "cr": "2",
+    "type": "Medium Dragon",
+    "biomes": ["Arctic"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Ancient Blue Dragon",
+    "cr": "23",
+    "type": "Gargantuan Dragon",
+    "biomes": ["Desert"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Adult Blue Dragon",
+    "cr": "16",
+    "type": "Huge Dragon",
+    "biomes": ["Desert"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Young Blue Dragon",
+    "cr": "9",
+    "type": "Large Dragon",
+    "biomes": ["Desert"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Blue Dragon Wyrmling",
+    "cr": "3",
+    "type": "Medium Dragon",
+    "biomes": ["Desert"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Pit Fiend",
+    "cr": "20",
+    "type": "Large Fiend (Devil)",
+    "biomes": ["Hells"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Horned Devil",
+    "cr": "11",
+    "type": "Large Fiend (Devil)",
+    "biomes": ["Hells"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Barbed Devil",
+    "cr": "5",
+    "type": "Medium Fiend (Devil)",
+    "biomes": ["Hells"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Bearded Devil",
+    "cr": "3",
+    "type": "Medium Fiend (Devil)",
+    "biomes": ["Hells"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Balor",
+    "cr": "19",
+    "type": "Huge Fiend (Demon)",
+    "biomes": ["Abyss"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Hezrou",
+    "cr": "8",
+    "type": "Large Fiend (Demon)",
+    "biomes": ["Abyss"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Vrock",
+    "cr": "6",
+    "type": "Large Fiend (Demon)",
+    "biomes": ["Abyss"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Drow Elite Warrior",
+    "cr": "5",
+    "type": "Medium Humanoid (Elf)",
+    "biomes": ["Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Drow Mage",
+    "cr": "7",
+    "type": "Medium Humanoid (Elf)",
+    "biomes": ["Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Drow Priestess of Lolth",
+    "cr": "8",
+    "type": "Medium Humanoid (Elf)",
+    "biomes": ["Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Gnoll Pack Lord",
+    "cr": "2",
+    "type": "Medium Humanoid (Gnoll)",
+    "biomes": ["Forest", "Grassland", "Hill"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Gnoll Fang of Yeenoghu",
+    "cr": "4",
+    "type": "Medium Fiend (Gnoll)",
+    "biomes": ["Abyss", "Forest", "Grassland"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Hobgoblin Captain",
+    "cr": "3",
+    "type": "Medium Humanoid (Goblinoid)",
+    "biomes": ["Forest", "Grassland", "Hill"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Hobgoblin Warlord",
+    "cr": "6",
+    "type": "Medium Humanoid (Goblinoid)",
+    "biomes": ["Forest", "Grassland", "Hill"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Lizardfolk Shaman",
+    "cr": "2",
+    "type": "Medium Humanoid (Lizardfolk)",
+    "biomes": ["Swamp"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Lizard King/Queen",
+    "cr": "4",
+    "type": "Medium Humanoid (Lizardfolk)",
+    "biomes": ["Swamp"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Orc Eye of Gruumsh",
+    "cr": "2",
+    "type": "Medium Humanoid (Orc)",
+    "biomes": ["Mountain", "Hill", "Forest"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Orc War Chief",
+    "cr": "4",
+    "type": "Medium Humanoid (Orc)",
+    "biomes": ["Mountain", "Hill", "Forest"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Orog",
+    "cr": "2",
+    "type": "Medium Humanoid (Orc)",
+    "biomes": ["Underdark", "Mountain"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Sahuagin Priestess",
+    "cr": "2",
+    "type": "Medium Humanoid (Sahuagin)",
+    "biomes": ["Coastal", "Underwater"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Sahuagin Baron",
+    "cr": "5",
+    "type": "Large Humanoid (Sahuagin)",
+    "biomes": ["Coastal", "Underwater"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Kuo-toa Archpriest",
+    "cr": "6",
+    "type": "Medium Humanoid (Kuo-toa)",
+    "biomes": ["Underdark", "Underwater"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Werebear",
+    "cr": "5",
+    "type": "Medium Humanoid (Shapechanger)",
+    "biomes": ["Forest"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Wereboar",
+    "cr": "4",
+    "type": "Medium Humanoid (Shapechanger)",
+    "biomes": ["Forest", "Grassland"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Wererat",
+    "cr": "2",
+    "type": "Medium Humanoid (Shapechanger)",
+    "biomes": ["Urban"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Weretiger",
+    "cr": "4",
+    "type": "Medium Humanoid (Shapechanger)",
+    "biomes": ["Forest", "Grassland"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Werewolf",
+    "cr": "3",
+    "type": "Medium Humanoid (Shapechanger)",
+    "biomes": ["Forest"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Vampire (Warrior Variant)",
+    "cr": "15",
+    "type": "Medium Undead (Shapechanger)",
+    "biomes": ["Urban", "Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Vampire (Spellcaster Variant)",
+    "cr": "15",
+    "type": "Medium Undead (Shapechanger)",
+    "biomes": ["Urban", "Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Vampire Spawn",
+    "cr": "5",
+    "type": "Medium Undead",
+    "biomes": ["Urban", "Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Mummy Lord",
+    "cr": "15",
+    "type": "Medium Undead",
+    "biomes": ["Desert", "Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Clay Golem",
+    "cr": "9",
+    "type": "Large Construct",
+    "biomes": ["Urban", "Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Flesh Golem",
+    "cr": "5",
+    "type": "Medium Construct",
+    "biomes": ["Urban", "Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Iron Golem",
+    "cr": "16",
+    "type": "Huge Construct",
+    "biomes": ["Urban", "Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Stone Golem",
+    "cr": "10",
+    "type": "Large Construct",
+    "biomes": ["Urban", "Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Bone Naga",
+    "cr": "4",
+    "type": "Large Undead",
+    "biomes": ["Underdark", "Urban"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Spirit Naga",
+    "cr": "8",
+    "type": "Large Monstrosity",
+    "biomes": ["Swamp", "Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Guardian Naga",
+    "cr": "10",
+    "type": "Large Celestial",
+    "biomes": ["Forest", "Urban"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Ancient Gold Dragon",
+    "cr": "24",
+    "type": "Gargantuan Dragon",
+    "biomes": ["Grassland", "Mountain"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Adult Gold Dragon",
+    "cr": "17",
+    "type": "Huge Dragon",
+    "biomes": ["Grassland", "Mountain"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Young Gold Dragon",
+    "cr": "10",
+    "type": "Large Dragon",
+    "biomes": ["Grassland", "Mountain"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Gold Dragon Wyrmling",
+    "cr": "3",
+    "type": "Medium Dragon",
+    "biomes": ["Grassland", "Mountain"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Ancient Silver Dragon",
+    "cr": "23",
+    "type": "Gargantuan Dragon",
+    "biomes": ["Mountain", "Arctic"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Adult Silver Dragon",
+    "cr": "16",
+    "type": "Huge Dragon",
+    "biomes": ["Mountain", "Arctic"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Ancient Brass Dragon",
+    "cr": "13",
+    "type": "Gargantuan Dragon",
+    "biomes": ["Desert"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Adult Brass Dragon",
+    "cr": "6",
+    "type": "Huge Dragon",
+    "biomes": ["Desert"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Cloud Giant (Smiling One Variant)",
+    "cr": "11",
+    "type": "Huge Giant",
+    "biomes": ["Mountain"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Fire Giant Dreadnought",
+    "cr": "14",
+    "type": "Huge Giant",
+    "biomes": ["Mountain", "Underdark"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Archmage",
+    "cr": "12",
+    "type": "Medium Humanoid",
+    "biomes": ["Urban"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Assassin",
+    "cr": "8",
+    "type": "Medium Humanoid",
+    "biomes": ["Urban"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Gladiator",
+    "cr": "5",
+    "type": "Medium Humanoid",
+    "biomes": ["Urban"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Knight",
+    "cr": "3",
+    "type": "Medium Humanoid",
+    "biomes": ["Urban"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Veteran",
+    "cr": "3",
+    "type": "Medium Humanoid",
+    "biomes": ["Urban"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Mage",
+    "cr": "6",
+    "type": "Medium Humanoid",
+    "biomes": ["Urban"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Priest",
+    "cr": "2",
+    "type": "Medium Humanoid",
+    "biomes": ["Urban"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Spy",
+    "cr": "1",
+    "type": "Medium Humanoid",
+    "biomes": ["Urban"],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Ancient Amethyst Dragon",
+    "cr": "22",
+    "type": "Gargantuan Dragon (Gem)",
+    "biomes": ["Underdark", "Mountain"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Adult Amethyst Dragon",
+    "cr": "16",
+    "type": "Huge Dragon (Gem)",
+    "biomes": ["Underdark", "Mountain"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Young Amethyst Dragon",
+    "cr": "9",
+    "type": "Large Dragon (Gem)",
+    "biomes": ["Underdark", "Mountain"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Amethyst Dragon Wyrmling",
+    "cr": "4",
+    "type": "Medium Dragon (Gem)",
+    "biomes": ["Underdark", "Mountain"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Ancient Crystal Dragon",
+    "cr": "19",
+    "type": "Gargantuan Dragon (Gem)",
+    "biomes": ["Mountain", "Arctic"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Adult Crystal Dragon",
+    "cr": "12",
+    "type": "Huge Dragon (Gem)",
+    "biomes": ["Mountain", "Arctic"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Young Crystal Dragon",
+    "cr": "5",
+    "type": "Large Dragon (Gem)",
+    "biomes": ["Mountain", "Arctic"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Crystal Dragon Wyrmling",
+    "cr": "2",
+    "type": "Medium Dragon (Gem)",
+    "biomes": ["Mountain", "Arctic"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Ancient Deep Dragon",
+    "cr": "18",
+    "type": "Gargantuan Dragon",
+    "biomes": ["Underdark"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Adult Deep Dragon",
+    "cr": "11",
+    "type": "Huge Dragon",
+    "biomes": ["Underdark"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Young Deep Dragon",
+    "cr": "5",
+    "type": "Large Dragon",
+    "biomes": ["Underdark"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Deep Dragon Wyrmling",
+    "cr": "2",
+    "type": "Medium Dragon",
+    "biomes": ["Underdark"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Ancient Emerald Dragon",
+    "cr": "21",
+    "type": "Gargantuan Dragon (Gem)",
+    "biomes": ["Underdark", "Mountain"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Adult Emerald Dragon",
+    "cr": "14",
+    "type": "Huge Dragon (Gem)",
+    "biomes": ["Underdark", "Mountain"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Young Emerald Dragon",
+    "cr": "8",
+    "type": "Large Dragon (Gem)",
+    "biomes": ["Underdark", "Mountain"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Emerald Dragon Wyrmling",
+    "cr": "3",
+    "type": "Medium Dragon (Gem)",
+    "biomes": ["Underdark", "Mountain"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Ancient Sapphire Dragon",
+    "cr": "22",
+    "type": "Gargantuan Dragon (Gem)",
+    "biomes": ["Underdark", "Mountain"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Adult Sapphire Dragon",
+    "cr": "15",
+    "type": "Huge Dragon (Gem)",
+    "biomes": ["Underdark", "Mountain"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Young Sapphire Dragon",
+    "cr": "9",
+    "type": "Large Dragon (Gem)",
+    "biomes": ["Underdark", "Mountain"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Sapphire Dragon Wyrmling",
+    "cr": "4",
+    "type": "Medium Dragon (Gem)",
+    "biomes": ["Underdark", "Mountain"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Ancient Topaz Dragon",
+    "cr": "20",
+    "type": "Gargantuan Dragon (Gem)",
+    "biomes": ["Coastal", "Underwater"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Adult Topaz Dragon",
+    "cr": "13",
+    "type": "Huge Dragon (Gem)",
+    "biomes": ["Coastal", "Underwater"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Young Topaz Dragon",
+    "cr": "7",
+    "type": "Large Dragon (Gem)",
+    "biomes": ["Coastal", "Underwater"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Topaz Dragon Wyrmling",
+    "cr": "3",
+    "type": "Medium Dragon (Gem)",
+    "biomes": ["Coastal", "Underwater"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Chromatic Greatwyrm",
+    "cr": "27",
+    "type": "Gargantuan Dragon",
+    "biomes": ["Any"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Gem Greatwyrm",
+    "cr": "26",
+    "type": "Gargantuan Dragon",
+    "biomes": ["Any"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Metallic Greatwyrm",
+    "cr": "28",
+    "type": "Gargantuan Dragon",
+    "biomes": ["Any"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Aspect of Bahamut",
+    "cr": "30",
+    "type": "Gargantuan Celestial (Dragon)",
+    "biomes": ["Any"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Aspect of Tiamat",
+    "cr": "30",
+    "type": "Gargantuan Fiend (Dragon)",
+    "biomes": ["Any"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Draconian Dreadnought",
+    "cr": "4",
+    "type": "Medium Monstrosity",
+    "biomes": ["Urban", "Mountain"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Draconian Foot Soldier",
+    "cr": "1/2",
+    "type": "Medium Monstrosity",
+    "biomes": ["Urban", "Mountain"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Draconian Infiltrator",
+    "cr": "3",
+    "type": "Medium Monstrosity",
+    "biomes": ["Urban", "Mountain"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Draconian Mage",
+    "cr": "2",
+    "type": "Medium Monstrosity",
+    "biomes": ["Urban", "Mountain"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Draconian Mastermind",
+    "cr": "6",
+    "type": "Medium Monstrosity",
+    "biomes": ["Urban", "Mountain"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Dragonbone Golem",
+    "cr": "11",
+    "type": "Large Construct",
+    "biomes": ["Underdark", "Urban"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Dragonflesh Grafter",
+    "cr": "3",
+    "type": "Medium Humanoid",
+    "biomes": ["Urban", "Underdark"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Dragonflesh Abomination",
+    "cr": "6",
+    "type": "Large Monstrosity",
+    "biomes": ["Urban", "Underdark"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Dragonblood Ooze",
+    "cr": "5",
+    "type": "Large Ooze",
+    "biomes": ["Underdark"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Dragonborn Champion",
+    "cr": "17",
+    "type": "Medium Humanoid",
+    "biomes": ["Urban", "Any"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Dragonborn of Bahamut",
+    "cr": "8",
+    "type": "Medium Humanoid",
+    "biomes": ["Urban", "Any"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Dragonborn of Tiamat",
+    "cr": "7",
+    "type": "Medium Humanoid",
+    "biomes": ["Urban", "Any"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Dragonnel",
+    "cr": "2",
+    "type": "Large Dragon",
+    "biomes": ["Mountain", "Hill"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Dragon Stalker",
+    "cr": "7",
+    "type": "Medium Humanoid",
+    "biomes": ["Any"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Draconic Shard",
+    "cr": "17",
+    "type": "Huge Undead",
+    "biomes": ["Underdark", "Mountain"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Elder Brain Dragon",
+    "cr": "22",
+    "type": "Gargantuan Aberration",
+    "biomes": ["Underdark"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Eyedrake",
+    "cr": "8",
+    "type": "Large Aberration",
+    "biomes": ["Underdark"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Ghost Dragon",
+    "cr": "17",
+    "type": "Huge Undead",
+    "biomes": ["Underdark", "Urban"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Hollow Dragon",
+    "cr": "18",
+    "type": "Huge Undead",
+    "biomes": ["Any"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Liondrake",
+    "cr": "7",
+    "type": "Large Monstrosity",
+    "biomes": ["Grassland", "Hill"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Metallic Peacekeeper",
+    "cr": "4",
+    "type": "Medium Construct",
+    "biomes": ["Urban"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Metallic Warbler",
+    "cr": "1/2",
+    "type": "Tiny Construct",
+    "biomes": ["Urban"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Moonstone Dragon Wyrmling",
+    "cr": "2",
+    "type": "Medium Dragon",
+    "biomes": ["Forest", "Feywild"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Young Moonstone Dragon",
+    "cr": "5",
+    "type": "Large Dragon",
+    "biomes": ["Forest", "Feywild"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Adult Moonstone Dragon",
+    "cr": "12",
+    "type": "Huge Dragon",
+    "biomes": ["Forest", "Feywild"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Ancient Moonstone Dragon",
+    "cr": "19",
+    "type": "Gargantuan Dragon",
+    "biomes": ["Forest", "Feywild"],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
+    "name": "Scion of Grolantor",
+    "cr": "22",
+    "type": "Gargantuan Giant",
+    "biomes": ["Hill", "Grassland"],
+    "source": "Bigby Presents: Glory of the Giants"
+  },
+  {
+    "name": "Scion of Memnor",
+    "cr": "24",
+    "type": "Gargantuan Giant",
+    "biomes": ["Mountain", "Urban"],
+    "source": "Bigby Presents: Glory of the Giants"
+  },
+  {
+    "name": "Scion of Skoraeus",
+    "cr": "23",
+    "type": "Gargantuan Giant",
+    "biomes": ["Underdark", "Mountain"],
+    "source": "Bigby Presents: Glory of the Giants"
+  },
+  {
+    "name": "Scion of Stronmaus",
+    "cr": "25",
+    "type": "Gargantuan Giant",
+    "biomes": ["Coastal", "Mountain"],
+    "source": "Bigby Presents: Glory of the Giants"
+  },
+  {
+    "name": "Scion of Surtur",
+    "cr": "24",
+    "type": "Gargantuan Giant",
+    "biomes": ["Mountain", "Underdark"],
+    "source": "Bigby Presents: Glory of the Giants"
+  },
+  {
+    "name": "Scion of Thrym",
+    "cr": "24",
+    "type": "Gargantuan Giant",
+    "biomes": ["Arctic", "Mountain"],
+    "source": "Bigby Presents: Glory of the Giants"
+  },
+  {
+    "name": "Cinder Hulk",
+    "cr": "12",
+    "type": "Huge Elemental",
+    "biomes": ["Mountain", "Underdark"],
+    "source": "Bigby Presents: Glory of the Giants"
+  },
+  {
+    "name": "Dust Hulk",
+    "cr": "11",
+    "type": "Huge Elemental",
+    "biomes": ["Desert", "Mountain"],
+    "source": "Bigby Presents: Glory of the Giants"
+  },
+  {
+    "name": "Lightning Hulk",
+    "cr": "14",
+    "type": "Huge Elemental",
+    "biomes": ["Mountain", "Coastal"],
+    "source": "Bigby Presents: Glory of the Giants"
+  },
+  {
+    "name": "Mist Hulk",
+    "cr": "12",
+    "type": "Huge Elemental",
+    "biomes": ["Coastal", "Forest"],
+    "source": "Bigby Presents: Glory of the Giants"
+  },
+  {
+    "name": "Mud Hulk",
+    "cr": "10",
+    "type": "Huge Elemental",
+    "biomes": ["Swamp", "Coastal"],
+    "source": "Bigby Presents: Glory of the Giants"
+  },
+  {
+    "name": "Rime Hulk",
+    "cr": "11",
+    "type": "Huge Elemental",
+    "biomes": ["Arctic", "Mountain"],
+    "source": "Bigby Presents: Glory of the Giants"
+  },
+  {
+    "name": "Death Giant Reaper",
+    "cr": "12",
+    "type": "Huge Giant",
+    "biomes": ["Shadowfell", "Underdark"],
+    "source": "Bigby Presents: Glory of the Giants"
+  },
+  {
+    "name": "Death Giant Shrouded One",
+    "cr": "15",
+    "type": "Huge Giant",
+    "biomes": ["Shadowfell", "Underdark"],
+    "source": "Bigby Presents: Glory of the Giants"
+  },
+  {
+    "name": "Cloud Giant Destiny Gambler",
+    "cr": "11",
+    "type": "Huge Giant",
+    "biomes": ["Mountain", "Urban"],
+    "source": "Bigby Presents: Glory of the Giants"
+  },
+  {
+    "name": "Fire Giant Forgecaller",
+    "cr": "12",
+    "type": "Huge Giant",
+    "biomes": ["Mountain", "Underdark"],
+    "source": "Bigby Presents: Glory of the Giants"
+  },
+  {
+    "name": "Frost Giant Ice Shaper",
+    "cr": "10",
+    "type": "Huge Giant",
+    "biomes": ["Arctic", "Mountain"],
+    "source": "Bigby Presents: Glory of the Giants"
+  },
+  {
+    "name": "Hill Giant Avalancher",
+    "cr": "9",
+    "type": "Huge Giant",
+    "biomes": ["Hill", "Mountain"],
+    "source": "Bigby Presents: Glory of the Giants"
+  },
+  {
+    "name": "Stone Giant Rockspeaker",
+    "cr": "10",
+    "type": "Huge Giant",
+    "biomes": ["Mountain", "Underdark"],
+    "source": "Bigby Presents: Glory of the Giants"
+  },
+  {
+    "name": "Storm Giant Tempest Caller",
+    "cr": "16",
+    "type": "Huge Giant",
+    "biomes": ["Coastal", "Underwater"],
+    "source": "Bigby Presents: Glory of the Giants"
+  },
+  {
+    "name": "Aerosaur",
+    "cr": "13",
+    "type": "Gargantuan Monstrosity",
+    "biomes": ["Mountain", "Coastal"],
+    "source": "Bigby Presents: Glory of the Giants"
+  },
+  {
+    "name": "Altisaur",
+    "cr": "14",
+    "type": "Gargantuan Monstrosity",
+    "biomes": ["Forest", "Grassland"],
+    "source": "Bigby Presents: Glory of the Giants"
+  },
+  {
+    "name": "Regisaur",
+    "cr": "16",
+    "type": "Gargantuan Monstrosity",
+    "biomes": ["Forest", "Swamp"],
+    "source": "Bigby Presents: Glory of the Giants"
+  }
+]

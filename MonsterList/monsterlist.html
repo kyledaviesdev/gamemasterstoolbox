@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kyle Davies">
+    <meta name="description" content="">
+    <title>Game Master Toolbox</title>
+    <link rel="stylesheet" type="text/css" href="../storymasters.css">
+    <link rel="icon" type="image/x-icon" href="../images/favicon-storymasters.png">
+    <script type="module" src="monsterlist.js" defer></script>
+    <script src="../storymasters.js" defer></script>
+</head>
+<body>
+  <nav id="menuNav">
+        <div id="menuBar">
+        <a href="../index.html">Home</a>
+        <a href="../CharacterRandomizer/CharacterRandomizer-master/CharacterRandomizer.html">Character Randomizer</a>
+        <a href="../CharacterTracker/character-tracker.html">Character Tracker</a>
+        <a href="../FeyCurseRandomizer/fey-curse-randomizer.html">Fey Curse Generator</a>
+        <a href="monsterlist.html">Monster List</a>
+        <a href="../Storytellers/oneShotAdventures.html">One Shot Adventures</a>
+      </div>
+        <div class="dropdown">
+            <button id="hamburgerBtn" onclick="hamburgerMenu()" class="dropbtn">&#9776;</button>
+            <div id="hamburgerMenu" class="dropdown-content">
+              <a href="../index.html">Home</a>
+              <a href="../CharacterRandomizer/CharacterRandomizer-master/CharacterRandomizer.html">Character Randomizer</a>
+              <a href="../CharacterTracker/character-tracker.html">Character Tracker</a>
+              <a href="../FeyCurseRandomizer/fey-curse-randomizer.html">Fey Curse Generator</a>
+              <a href="monsterlist.html">Monster List</a>
+              <a href="../Storytellers/oneShotAdventures.html">One Shot Adventures</a>
+            </div>
+      </div>
+      </nav>
+  <header id="title">
+    <img src="../images/favicon-storymasters.png">
+    <h1>Monster List</h1>
+  </header>
+  <hr>
+  <div id="filter-monsters">
+    <fieldset id="filtersFieldset" style="border:1px solid #ddd;padding:6px;">
+      <legend id="filtersLegend" style="cursor:pointer">Filters</legend>
+      <div id="filtersContent">
+        <div id="filterGroups" style="display:block;gap:12px;flex-wrap:wrap"></div>
+        <div style="margin-top:8px">
+          <button type="button" id="clearButton" style="margin-left:0">Clear Filters</button>
+          <span id="filterInfo" style="margin-left:12px"></span>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+  <div id="display-monsters">
+    <h2>Monster List</h2>
+    <div id="monsterTableContainer" style="overflow:auto;">
+      <table id="monster-table">
+        <thead>
+          <tr>
+            <th class="sortable" data-key="name" scope="col">Name</th>
+            <th class="sortable" data-key="cr" scope="col">CR</th>
+            <th class="sortable" data-key="type" scope="col">Type</th>
+            <th class="sortable" data-key="biomes" scope="col">Biomes</th>
+            <th class="sortable" data-key="source" scope="col">Source</th>
+          </tr>
+        </thead>
+        <tbody id="monster-table-body"></tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
