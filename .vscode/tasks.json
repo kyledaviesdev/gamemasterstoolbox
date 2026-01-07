@@ -2,9 +2,9 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Serve Site (npm start)",
+      "label": "Serve Site (python)",
       "type": "shell",
-      "command": "npm run start",
+      "command": "python -m http.server 5500",
       "presentation": { "reveal": "always", "panel": "shared" },
       "problemMatcher": []
     }

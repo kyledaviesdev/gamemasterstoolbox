@@ -5,7 +5,16 @@ function uniq(arr) {
 }
 
 function collectGroups(monsters) {
-	const crs = uniq(monsters.map(m => m.cr || '').filter(Boolean));
+	// CRs need numeric sorting (e.g., 1, 1/2, 1/4 should be in numeric order)
+	let crs = Array.from(new Set(monsters.map(m => String(m.cr || '').trim()).filter(Boolean)));
+	crs.sort((a, b) => {
+		const na = crToNumber(a);
+		const nb = crToNumber(b);
+		if (isNaN(na) && isNaN(nb)) return String(a).localeCompare(String(b));
+		if (isNaN(na)) return 1;
+		if (isNaN(nb)) return -1;
+		return na - nb;
+	});
 	const types = uniq(monsters.map(m => m.type || '').filter(Boolean));
 	const sources = uniq(monsters.map(m => m.source || '').filter(Boolean));
 	const biomes = uniq([].concat(...monsters.map(m => Array.isArray(m.biomes)? m.biomes : [])).filter(Boolean));
@@ -15,9 +24,7 @@ function collectGroups(monsters) {
 function createCheckbox(name, value, idPrefix) {
 	const id = `${idPrefix}-${value.replace(/[^a-z0-9]+/gi,'_')}`;
 	const wrapper = document.createElement('div');
-	wrapper.style.display = 'inline-flex';
-	wrapper.style.alignItems = 'center';
-	wrapper.style.gap = '6px';
+	wrapper.className = 'checkbox-wrapper';
 	const cb = document.createElement('input');
 	cb.type = 'checkbox';
 	cb.id = id;
@@ -38,36 +45,27 @@ function renderFilters(groups, onChange) {
 	container.style.boxSizing = 'border-box';
 	function makeGroup(title, items, idPrefix) {
 			const group = document.createElement('fieldset');
-			group.style.border = '1px solid #ddd';
-			group.style.padding = '6px';
-			group.style.width = '100%';
-			group.style.boxSizing = 'border-box';
-			group.style.marginBottom = '8px';
+			group.className = 'filter-group';
 
 			const legend = document.createElement('legend');
+			legend.className = 'filter-legend';
 			legend.textContent = title;
 			legend.dataset.title = title;
-			legend.style.cursor = 'pointer';
 			group.appendChild(legend);
 
 			// content container that can be collapsed
 			const content = document.createElement('div');
-			content.style.display = 'flex';
-			content.style.flexWrap = 'wrap';
-			content.style.gap = '8px';
-			content.style.marginTop = '6px';
-			content.style.width = '100%';
-			content.style.boxSizing = 'border-box';
+			content.className = 'filter-content collapsed';
 			items.forEach(it => content.appendChild(createCheckbox(title, it, idPrefix, onChange)));
 			group.appendChild(content);
 
 			// collapsed state toggle (start collapsed)
 			let collapsed = true;
-			content.style.display = 'none';
+			// start collapsed and toggle via class
 			legend.setAttribute('aria-expanded', 'false');
 			legend.addEventListener('click', () => {
 				collapsed = !collapsed;
-				content.style.display = collapsed ? 'none' : 'flex';
+				content.classList.toggle('collapsed', collapsed);
 				legend.setAttribute('aria-expanded', collapsed ? 'false' : 'true');
 			});
 
@@ -95,9 +93,11 @@ function readChecked() {
 	const checked = { CR: new Set(), Type: new Set(), Biome: new Set(), Source: new Set() };
 	container.querySelectorAll('input[type=checkbox]').forEach(cb => {
 		if (!cb.checked) return;
-		const legend = cb.parentElement.parentElement.querySelector('legend');
-		const fld = legend && legend.dataset && legend.dataset.title ? legend.dataset.title : legend && legend.textContent;
-		if (!checked[fld]) {
+		// Find the nearest fieldset ancestor and its legend to get the canonical group title
+		const fieldset = cb.closest('fieldset');
+		const legend = fieldset ? fieldset.querySelector('legend') : null;
+		const fld = legend && legend.dataset && legend.dataset.title ? legend.dataset.title : (legend && legend.textContent ? legend.textContent.trim().replace(/\s*\(\d+\)$/, '') : null);
+		if (!fld || !checked[fld]) {
 			console.warn('Unknown filter group:', fld);
 			return;
 		}
@@ -109,6 +109,8 @@ function readChecked() {
 // Sorting state for the table
 let sortState = { key: null, dir: 1 };
 const SORT_STORAGE_KEY = 'monsterlist.sortState';
+// Currently selected monster name (used to persist selection across renders)
+let selectedMonsterName = null;
 
 function saveSortState() {
 	try {
@@ -195,6 +197,7 @@ function renderList(monsters, checked) {
 	info.textContent = `${matches.length} monsters shown`;
 	matches.forEach(m => {
 		const tr = document.createElement('tr');
+		tr.tabIndex = 0; // make rows focusable for keyboard
 		const nameTd = document.createElement('td');
 		nameTd.textContent = m.name;
 		const crTd = document.createElement('td');
@@ -211,7 +214,31 @@ function renderList(monsters, checked) {
 		tr.appendChild(biomesTd);
 		tr.appendChild(srcTd);
 		tbody.appendChild(tr);
+		// row click selects the row and persists selection until clicking elsewhere
+		tr.addEventListener('click', (ev) => {
+			ev.stopPropagation();
+			// clear previous selection
+			if (selectedMonsterName && selectedMonsterName !== m.name) {
+				const prev = document.querySelector('#monster-table tbody tr.selected');
+				if (prev) prev.classList.remove('selected');
+			}
+			// toggle selection for this row
+			if (tr.classList.contains('selected')) {
+				tr.classList.remove('selected');
+				selectedMonsterName = null;
+			} else {
+				tr.classList.add('selected');
+				selectedMonsterName = m.name;
+			}
+		});
+		// also allow keyboard selection via Enter/Space
+		tr.addEventListener('keydown', (ev) => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); tr.click(); } });
 	});
+	// restore selection if needed (after render)
+	if (selectedMonsterName) {
+		const restore = Array.from(tbody.querySelectorAll('tr')).find(r => r.firstElementChild && r.firstElementChild.textContent === selectedMonsterName);
+		if (restore) restore.classList.add('selected');
+	}
 
 		// update header sort indicators
 		document.querySelectorAll('#monster-table thead th.sortable').forEach(th => {
@@ -252,11 +279,14 @@ document.addEventListener('DOMContentLoaded', () => {
 	const applyBtn = document.getElementById('applyFiltersButton');
 	if (applyBtn) {
 		applyBtn.addEventListener('click', () => {
-			const checked = readChecked();
-			const matches = monsters.filter(m => matchesMonster(m, checked));
-			console.debug('Applying filters', { checked, matchesCount: matches.length, sample: matches.slice(0,10).map(x=>x.name) });
-			renderList(monsters, checked);
-			updateOuterLegendCount();
+			try {
+				const checked = readChecked();
+				// apply and render
+				renderList(monsters, checked);
+				updateOuterLegendCount();
+			} catch (err) {
+				console.error('Error applying filters', err);
+			}
 		});
 	}
 
@@ -301,5 +331,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	// update outer legend counts initially
 	updateOuterLegendCount();
+
+	// clicking outside the table clears any selection
+	document.addEventListener('click', () => {
+		const prev = document.querySelector('#monster-table tbody tr.selected');
+		if (prev) {
+			prev.classList.remove('selected');
+			selectedMonsterName = null;
+		}
+	});
 });
 

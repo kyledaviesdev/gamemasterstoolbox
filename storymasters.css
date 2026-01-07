@@ -268,6 +268,46 @@ h1
   border: 2px solid var(--accent2-color);
   border-radius: 6px;
 }
+/* Styles for generated filter groups (used by MonsterList) */
+.filter-groups {
+  display: block;
+  gap: 12px;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+}
+.filter-controls {
+  margin-top: 8px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.filter-group {
+  border: 1px solid #ddd;
+  padding: 6px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+}
+.filter-legend {
+  cursor: pointer;
+}
+.filter-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 6px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.filter-content.collapsed {
+  display: none;
+}
+.checkbox-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
 #filter-monsters
 {
   background-color: var(--primary-color);
@@ -319,6 +359,11 @@ h1
   background-color: var(--primary-color);
   color: var(--accent2-color);
   transition: background-color 60ms ease-in-out, color 60ms ease-in-out;
+}
+/* Persisted selection state (matches hover visuals) */
+#monster-table tbody tr.selected td {
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
 }
 #monster-table thead th.sortable {
   cursor: pointer;
