@@ -12,7 +12,7 @@ function collectGroups(monsters) {
 	return { crs, types, sources, biomes };
 }
 
-function createCheckbox(name, value, idPrefix, onChange) {
+function createCheckbox(name, value, idPrefix) {
 	const id = `${idPrefix}-${value.replace(/[^a-z0-9]+/gi,'_')}`;
 	const wrapper = document.createElement('div');
 	wrapper.style.display = 'inline-flex';
@@ -22,7 +22,6 @@ function createCheckbox(name, value, idPrefix, onChange) {
 	cb.type = 'checkbox';
 	cb.id = id;
 	cb.value = value;
-	cb.addEventListener('change', onChange);
 	const label = document.createElement('label');
 	label.htmlFor = id;
 	label.textContent = value;
@@ -78,8 +77,8 @@ function renderFilters(groups, onChange) {
 				const checked = content.querySelectorAll('input[type=checkbox]:checked').length;
 				legend.textContent = checked > 0 ? `${legend.dataset.title} (${checked})` : legend.dataset.title;
 			};
-			// attach change listeners to update legend count
-			content.querySelectorAll('input[type=checkbox]').forEach(cb => cb.addEventListener('change', () => { updateLegendCount(); updateOuterLegendCount(); onChange(); }));
+			// attach change listeners to update legend counts; do NOT auto-apply filters
+			content.querySelectorAll('input[type=checkbox]').forEach(cb => cb.addEventListener('change', () => { updateLegendCount(); updateOuterLegendCount(); }));
 			// initialize
 			updateLegendCount();
 
@@ -96,8 +95,13 @@ function readChecked() {
 	const checked = { CR: new Set(), Type: new Set(), Biome: new Set(), Source: new Set() };
 	container.querySelectorAll('input[type=checkbox]').forEach(cb => {
 		if (!cb.checked) return;
-		const fld = cb.parentElement.parentElement.querySelector('legend').textContent;
-		checked[fld].add(cb.value);
+		const legend = cb.parentElement.parentElement.querySelector('legend');
+		const fld = legend && legend.dataset && legend.dataset.title ? legend.dataset.title : legend && legend.textContent;
+		if (!checked[fld]) {
+			console.warn('Unknown filter group:', fld);
+			return;
+		}
+		checked[fld].add(String(cb.value).trim());
 	});
 	return checked;
 }
@@ -167,9 +171,12 @@ function applySort(monsters) {
 
 function matchesMonster(m, checked) {
 	// For each group, if checked set is non-empty, monster must match at least one of them
-	if (checked.CR.size > 0 && !checked.CR.has(m.cr)) return false;
-	if (checked.Type.size > 0 && !checked.Type.has(m.type)) return false;
-	if (checked.Source.size > 0 && !checked.Source.has(m.source)) return false;
+	const mcr = (m.cr === undefined || m.cr === null) ? '' : String(m.cr).trim();
+	const mtype = (m.type === undefined || m.type === null) ? '' : String(m.type).trim();
+	const msource = (m.source === undefined || m.source === null) ? '' : String(m.source).trim();
+	if (checked.CR.size > 0 && !checked.CR.has(mcr)) return false;
+	if (checked.Type.size > 0 && !checked.Type.has(mtype)) return false;
+	if (checked.Source.size > 0 && !checked.Source.has(msource)) return false;
 	if (checked.Biome.size > 0) {
 		const mb = Array.isArray(m.biomes) ? m.biomes : [];
 		const has = Array.from(checked.Biome).some(b => mb.includes(b));
@@ -236,12 +243,22 @@ function updateOuterLegendCount() {
 	outer.textContent = totalChecked > 0 ? `${outer.dataset.title || 'Filters'} (${totalChecked})` : (outer.dataset.title || 'Filters');
 }
 
+
 document.addEventListener('DOMContentLoaded', () => {
 	const groups = collectGroups(monsters);
-	renderFilters(groups, () => {
-		const checked = readChecked();
-		renderList(monsters, checked);
-	});
+	renderFilters(groups);
+
+	// Apply Filters button: apply current checked filters to the table
+	const applyBtn = document.getElementById('applyFiltersButton');
+	if (applyBtn) {
+		applyBtn.addEventListener('click', () => {
+			const checked = readChecked();
+			const matches = monsters.filter(m => matchesMonster(m, checked));
+			console.debug('Applying filters', { checked, matchesCount: matches.length, sample: matches.slice(0,10).map(x=>x.name) });
+			renderList(monsters, checked);
+			updateOuterLegendCount();
+		});
+	}
 
 	// attach click handlers to headers for sorting
 	document.querySelectorAll('#monster-table thead th.sortable').forEach(th => {
