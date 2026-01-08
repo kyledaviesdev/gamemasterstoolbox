@@ -4,6 +4,10 @@ function uniq(arr) {
 	return Array.from(new Set(arr)).sort((a,b)=> String(a).localeCompare(String(b)));
 }
 
+const TYPE_KEYWORDS = [
+	'Aberration','Beast','Celestial','Construct','Dragon','Elemental','Fey','Fiend','Giant','Humanoid','Monstrosity','Ooze','Plant','Undead'
+];
+
 function collectGroups(monsters) {
 	// CRs need numeric sorting (e.g., 1, 1/2, 1/4 should be in numeric order)
 	let crs = Array.from(new Set(monsters.map(m => String(m.cr || '').trim()).filter(Boolean)));
@@ -15,7 +19,8 @@ function collectGroups(monsters) {
 		if (isNaN(nb)) return -1;
 		return na - nb;
 	});
-	const types = uniq(monsters.map(m => m.type || '').filter(Boolean));
+	// Use a fixed set of type keywords to keep the Type filter consistent
+	const types = TYPE_KEYWORDS.slice();
 	const sources = uniq(monsters.map(m => m.source || '').filter(Boolean));
 	const biomes = uniq([].concat(...monsters.map(m => Array.isArray(m.biomes)? m.biomes : [])).filter(Boolean));
 	return { crs, types, sources, biomes };
@@ -177,7 +182,11 @@ function matchesMonster(m, checked) {
 	const mtype = (m.type === undefined || m.type === null) ? '' : String(m.type).trim();
 	const msource = (m.source === undefined || m.source === null) ? '' : String(m.source).trim();
 	if (checked.CR.size > 0 && !checked.CR.has(mcr)) return false;
-	if (checked.Type.size > 0 && !checked.Type.has(mtype)) return false;
+	if (checked.Type.size > 0) {
+		const mtypeLC = mtype.toLowerCase();
+		const typeMatch = Array.from(checked.Type).some(t => mtypeLC.includes(String(t).trim().toLowerCase()));
+		if (!typeMatch) return false;
+	}
 	if (checked.Source.size > 0 && !checked.Source.has(msource)) return false;
 	if (checked.Biome.size > 0) {
 		const mb = Array.isArray(m.biomes) ? m.biomes : [];
@@ -206,12 +215,15 @@ function renderList(monsters, checked) {
 		typeTd.textContent = m.type;
 		const biomesTd = document.createElement('td');
 		biomesTd.textContent = (m.biomes || []).join(', ');
+		const alignTd = document.createElement('td');
+		alignTd.textContent = m.alignment || '';
 		const srcTd = document.createElement('td');
 		srcTd.textContent = m.source || '';
 		tr.appendChild(nameTd);
 		tr.appendChild(crTd);
 		tr.appendChild(typeTd);
 		tr.appendChild(biomesTd);
+		tr.appendChild(alignTd);
 		tr.appendChild(srcTd);
 		tbody.appendChild(tr);
 		// row click selects the row and persists selection until clicking elsewhere

@@ -1,4 +1,3 @@
-export const monsters =
 [
   {
     "name": "Aarakocra",
@@ -20,7 +19,7 @@ export const monsters =
     "name": "Abjurer Wizard",
     "cr": "9",
     "type": "Humanoid",
-    "alignment": "Any Alignment",
+    "alignment": "Any alignment",
     "biomes": ["Urban"],
     "immunities": [],
     "traits": [
@@ -2636,6 +2635,22 @@ export const monsters =
     "source": "Eberron: Rising from the Last War"
   },
   {
+    "name": "Young Red Dragon",
+    "cr": "10",
+    "type": "Large Dragon",
+    "alignment": "Chaotic Evil",
+    "biomes": ["Mountain", "Hill"],
+    "immunities": ["Fire damage"],
+    "traits": [],
+    "actions": [
+      "Multiattack: The dragon makes three attacks: one with its bite and two with its claws.",
+      "Bite: Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) piercing damage plus 3 (1d6) fire damage.",
+      "Claw: Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage.",
+      "Fire Breath (Recharge 5–6): The dragon exhales fire in a 30-foot cone. Each creature in that area must make a DC 17 Dexterity saving throw, taking 56 (16d6) fire damage on a failed save."
+    ],
+    "source": "Monster Manual"
+  },
+  {
     "name": "Pit Fiend",
     "cr": "20",
     "type": "Large Fiend (Devil)",
@@ -3558,7 +3573,7 @@ export const monsters =
     "name": "Aartuk Warrior",
     "cr": "2",
     "type": "Medium Plant",
-    "alignment": "Typically Lawful Evil",
+    "alignment": "Star-spawned (Typically Lawful Evil)",
     "biomes": ["Space", "Asteroid"],
     "immunities": [],
     "traits": [
@@ -3576,7 +3591,7 @@ export const monsters =
     "name": "Aartuk Priest",
     "cr": "3",
     "type": "Medium Plant",
-    "alignment": "Typically Lawful Evil",
+    "alignment": "Star-spawned (Typically Lawful Evil)",
     "biomes": ["Space", "Asteroid"],
     "immunities": [],
     "traits": [
@@ -4262,6 +4277,332 @@ export const monsters =
     "source": "Spelljammer: Adventures in Space"
   },
   {
+    "name": "Tarrasque",
+    "cr": "30",
+    "type": "Gargantuan Monstrosity (Titan)",
+    "alignment": "Unaligned",
+    "biomes": ["Any"],
+    "immunities": ["Fire, Poison damage", "Bludgeoning, Piercing, and Slashing from Nonmagical attacks", "Condition: Charmed, Frightened, Paralyzed, Poisoned"],
+    "traits": [
+      "Legendary Resistance (3/Day): If the tarrasque fails a saving throw, it can choose to succeed instead.",
+      "Magic Resistance: The tarrasque has advantage on saving throws against spells and other magical effects.",
+      "Reflective Carapace: Any time the tarrasque is targeted by a magic missile spell, a line spell, or a spell that requires a ranged attack roll, roll a d6. On a 1 to 5, the tarrasque is unaffected. On a 6, the tarrasque is unaffected, and the effect is reflected back at the caster."
+    ],
+    "actions": [
+      "Multiattack: The tarrasque can use its Frightful Presence. It then makes five attacks: one with its bite, two with its claws, one with its horns, and one with its tail.",
+      "Bite: Melee Weapon Attack: +19 to hit, reach 10 ft., one target. Hit: 36 (4d12 + 10) piercing damage. If the target is a creature, it is grappled (escape DC 20).",
+      "Swallow: The tarrasque makes one bite attack against a Large or smaller creature it is grappling. If the attack hits, the target is swallowed."
+    ],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Vampire",
+    "cr": "13",
+    "type": "Medium Undead (Shapechanger)",
+    "alignment": "Lawful Evil",
+    "biomes": ["Urban", "Underdark"],
+    "immunities": [],
+    "traits": [
+      "Shapechanger: The vampire can use its action to polymorph into a Tiny bat, a Medium cloud of mist, or back into its true form.",
+      "Regeneration: The vampire regains 20 HP at the start of its turn if it has at least 1 HP and isn't in sunlight or running water.",
+      "Spider Climb: The vampire can climb difficult surfaces, including upside down on ceilings."
+    ],
+    "actions": [
+      "Multiattack: The vampire makes two attacks, only one of which can be a bite.",
+      "Unarmed Strike: Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) bludgeoning damage plus 14 (4d6) necrotic damage.",
+      "Bite: Melee Weapon Attack: +9 to hit, reach 5 ft., one willing, restrained, or grappled creature. Hit: 7 (1d6 + 4) piercing damage plus 10 (3d6) necrotic damage."
+    ],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Ankylosaurus",
+    "cr": "3",
+    "type": "Huge Beast",
+    "alignment": "Unaligned",
+    "biomes": ["Forest", "Grassland"],
+    "immunities": [],
+    "traits": [],
+    "actions": [
+      "Tail: Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 18 (4d6 + 4) bludgeoning damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone."
+    ],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Azer",
+    "cr": "2",
+    "type": "Medium Elemental",
+    "alignment": "Lawful Neutral",
+    "biomes": ["Mountain", "Underdark"],
+    "immunities": ["Fire, Poison damage", "Condition: Poisoned"],
+    "traits": [
+      "Heated Body: A creature that touches the azer or hits it with a melee attack while within 5 feet of it takes 5 (1d10) fire damage.",
+      "Heated Weapons: When the azer hits with a metal melee weapon, it deals an extra 3 (1d6) fire damage (included in the attack).",
+      "Illumination: The azer sheds bright light in a 10-foot radius and dim light for an additional 10 feet."
+    ],
+    "actions": [
+      "Warhammer: Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage, or 8 (1d10 + 3) bludgeoning damage if used with two hands, plus 3 (1d6) fire damage."
+    ],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Behir",
+    "cr": "11",
+    "type": "Huge Monstrosity",
+    "alignment": "Neutral Evil",
+    "biomes": ["Mountain", "Underdark"],
+    "immunities": ["Lightning damage"],
+    "traits": [],
+    "actions": [
+      "Multiattack: The behir makes two attacks: one with its bite and one to constrict.",
+      "Bite: Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 22 (3d10 + 6) piercing damage.",
+      "Constrict: Melee Weapon Attack: +10 to hit, reach 5 ft., one Large or smaller creature. Hit: 17 (2d10 + 6) bludgeoning damage plus 17 (2d10 + 6) slashing damage. The target is grappled (escape DC 16).",
+      "Lightning Breath (Recharge 5–6): The behir exhales a line of lightning that is 20 feet long and 5 feet wide. Each creature in that line must make a DC 16 Dexterity saving throw, taking 66 (12d10) lightning damage on a failed save."
+    ],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Bugbear",
+    "cr": "1",
+    "type": "Medium Humanoid (Goblinoid)",
+    "alignment": "Chaotic Evil",
+    "biomes": ["Forest", "Grassland", "Mountain"],
+    "immunities": [],
+    "traits": [
+      "Brute: A melee weapon deals one extra die of its damage when the bugbear hits with it.",
+      "Surprise Attack: If the bugbear surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 7 (2d6) damage."
+    ],
+    "actions": [
+      "Morningstar: Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 11 (2d8 + 2) piercing damage.",
+      "Javelin: Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 9 (2d6 + 2) piercing damage."
+    ],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Adult Lunar Dragon",
+    "cr": "13",
+    "type": "Huge Dragon",
+    "alignment": "Typically Neutral",
+    "biomes": ["Space", "Mountain"],
+    "immunities": ["Cold damage"],
+    "traits": [
+      "Legendary Resistance (3/Day): If the dragon fails a saving throw, it can choose to succeed instead.",
+      "Unusual Nature: The dragon doesn't require air."
+    ],
+    "actions": [
+      "Multiattack: The dragon makes three attacks: one with its bite and two with its claws.",
+      "Bite: Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) piercing damage plus 9 (2d8) cold damage.",
+      "Bewildering Breath (Recharge 5–6): The dragon exhales moonlight in a 60-foot cone. DC 18 Wisdom saving throw or take 49 (11d8) radiant damage and be charmed."
+    ],
+    "source": "Spelljammer: Adventures in Space"
+  },
+  {
+    "name": "Megapede",
+    "cr": "11",
+    "type": "Gargantuan Monstrosity",
+    "alignment": "Unaligned",
+    "biomes": ["Desert", "Asteroid", "Space"],
+    "immunities": [],
+    "traits": [
+      "Magic Resistance: The megapede has advantage on saving throws against spells and other magical effects."
+    ],
+    "actions": [
+      "Multiattack: The megapede makes two attacks: one with its bite and one with its claws.",
+      "Bite: Melee Weapon Attack: +10 to hit, reach 15 ft., one target. Hit: 19 (3d8 + 6) piercing damage plus 10 (3d6) poison damage."
+    ],
+    "source": "Spelljammer: Adventures in Space"
+  },
+  {
+    "name": "Zariel",
+    "cr": "26",
+    "type": "Medium Fiend (Devil)",
+    "alignment": "Lawful Evil",
+    "biomes": ["Urban"],
+    "immunities": ["Fire, Poison damage", "Bludgeoning, Piercing, and Slashing from Nonmagical attacks that aren't Silvered", "Condition: Charmed, Exhaustion, Frightened, Poisoned"],
+    "traits": [
+      "Devil's Sight: Magical darkness doesn't impede Zariel's darkvision.",
+      "Legendary Resistance (3/Day): If Zariel fails a saving throw, she can choose to succeed instead.",
+      "Magic Resistance: Zariel has advantage on saving throws against spells."
+    ],
+    "actions": [
+      "Multiattack: Zariel makes three attacks with her Longsword or her Javelins.",
+      "Longsword: Melee Weapon Attack: +16 to hit, reach 5 ft., one target. Hit: 12 (1d8 + 8) slashing damage plus 36 (8d8) fire damage."
+    ],
+    "source": "Monsters of the Multiverse"
+  },
+  {
+    "name": "Ankheg",
+    "cr": "2",
+    "type": "Large Monstrosity",
+    "alignment": "Unaligned",
+    "biomes": ["Forest", "Grassland"],
+    "immunities": [],
+    "traits": [
+      "Tunneler: The ankheg can burrow through solid rock at half its burrow speed and leaves a 5-foot-diameter tunnel in its wake."
+    ],
+    "actions": [
+      "Bite: Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage plus 3 (1d6) acid damage. If the target is a Large or smaller creature, it is grappled (escape DC 13).",
+      "Acid Spray (Recharge 6): The ankheg spits acid in a line that is 30 feet long and 5 feet wide. Each creature in that line must make a DC 13 Dexterity saving throw, taking 10 (3d6) acid damage on a failed save."
+    ],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Banderhobb",
+    "cr": "5",
+    "type": "Large Monstrosity",
+    "alignment": "Neutral Evil",
+    "biomes": ["Urban", "Forest", "Swamp"],
+    "immunities": [],
+    "traits": [
+      "Resonant Connection: Knows distance and direction to a creature if it has a piece of them.",
+      "Shadow Stealth: While in dim light or darkness, it can hide as a bonus action."
+    ],
+    "actions": [
+      "Bite: Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 22 (5d6 + 5) piercing damage and target is grappled.",
+      "Tongue: Melee Weapon Attack: +8 to hit, reach 15 ft., one target. Hit: 10 (3d6) necrotic damage.",
+      "Shadow Jaunt: Teleports up to 30 feet to an unoccupied space in dim light or darkness."
+    ],
+    "source": "Monsters of the Multiverse"
+  },
+  {
+    "name": "Banshee",
+    "cr": "4",
+    "type": "Medium Undead",
+    "alignment": "Chaotic Evil",
+    "biomes": ["Urban", "Forest"],
+    "immunities": ["Cold, Necrotic, Poison", "Condition: Charmed, Exhaustion, Frightened, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained"],
+    "traits": [
+      "Detect Life: Magically senses non-undead/constructs within 5 miles.",
+      "Incorporeal Movement: Moves through creatures/objects as difficult terrain."
+    ],
+    "actions": [
+      "Corrupting Touch: Melee Spell Attack: +4 to hit, reach 5 ft. Hit: 12 (3d6 + 2) necrotic damage.",
+      "Wail (1/Day): Non-undead/constructs within 30 feet must make a DC 13 Constitution save or drop to 0 HP."
+    ],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Giff",
+    "cr": "3",
+    "type": "Medium Humanoid",
+    "alignment": "Lawful Neutral",
+    "biomes": ["Urban", "Astral Plane"],
+    "immunities": [],
+    "traits": [
+      "Firearms Knowledge: Proficiency bonus is doubled for firearm attacks.",
+      "Headbutt: Extra 7 (2d6) damage if moving 20+ feet before hitting."
+    ],
+    "actions": [
+      "Multiattack: Makes two longsword or two musket attacks.",
+      "Longsword: Melee Weapon Attack: +6 to hit. Hit: 8 (1d8 + 4) bludgeoning damage.",
+      "Musket: Ranged Weapon Attack: +4 to hit. Hit: 7 (1d12 + 1) piercing damage.",
+      "Frag Grenade (1/Day): 20-foot radius, DC 15 Dexterity save for 17 (5d6) piercing damage."
+    ],
+    "source": "Monsters of the Multiverse"
+  },
+  {
+    "name": "Hill Giant",
+    "cr": "5",
+    "type": "Huge Giant",
+    "alignment": "Chaotic Evil",
+    "biomes": ["Hill"],
+    "immunities": [],
+    "traits": [],
+    "actions": [
+      "Multiattack: Makes two greatclub attacks.",
+      "Greatclub: Melee Weapon Attack: +8 to hit, reach 10 ft. Hit: 18 (3d8 + 5) bludgeoning damage.",
+      "Rock: Ranged Weapon Attack: +8 to hit, range 60/240 ft. Hit: 21 (3d10 + 5) bludgeoning damage."
+    ],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Oni",
+    "cr": "7",
+    "type": "Large Giant",
+    "alignment": "Lawful Evil",
+    "biomes": ["Forest", "Urban"],
+    "immunities": [],
+    "traits": [
+      "Innate Spellcasting: Can cast Darkness, Invisibility, and Charm Person.",
+      "Regeneration: Regains 10 HP at the start of its turn if it has at least 1 HP."
+    ],
+    "actions": [
+      "Multiattack: Makes two claw or glaive attacks.",
+      "Glaive: Melee Weapon Attack: +7 to hit, reach 10 ft. Hit: 15 (2d10 + 4) slashing damage.",
+      "Change Shape: Polymorphs into a Small/Medium humanoid, Large giant, or back."
+    ],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Otyugh",
+    "cr": "5",
+    "type": "Large Aberration",
+    "alignment": "Neutral",
+    "biomes": ["Underdark"],
+    "immunities": [],
+    "traits": [
+      "Limited Telepathy: Transmits simple messages/images within 120 feet."
+    ],
+    "actions": [
+      "Multiattack: Makes one bite and two tentacle attacks.",
+      "Bite: Melee Weapon Attack: +6 to hit. Hit: 12 (2d8 + 3) piercing damage plus poison disease risk.",
+      "Tentacle: Melee Weapon Attack: +6 to hit. Hit: 7 (1d8 + 3) bludgeoning damage and target is grappled."
+    ],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Wyvern",
+    "cr": "6",
+    "type": "Large Dragon",
+    "alignment": "Unaligned",
+    "biomes": ["Hill", "Mountain"],
+    "immunities": [],
+    "traits": [],
+    "actions": [
+      "Multiattack: Makes two attacks: one with its bite and one with its stinger.",
+      "Bite: Melee Weapon Attack: +7 to hit, reach 10 ft. Hit: 11 (2d6 + 4) piercing damage.",
+      "Stinger: Melee Weapon Attack: +7 to hit. Hit: 11 (2d6 + 4) piercing damage plus 24 (7d6) poison damage."
+    ],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Xorn",
+    "cr": "3",
+    "type": "Medium Elemental",
+    "alignment": "Neutral",
+    "biomes": ["Underdark", "Mountain"],
+    "immunities": [],
+    "traits": [
+      "Earth Glide: Can burrow through nonmagical unworked earth/stone without disturbing it.",
+      "Treasure Sense: Pinpoints location of precious metals/stones within 60 feet."
+    ],
+    "actions": [
+      "Multiattack: Makes three claw attacks and one bite attack.",
+      "Claw: Melee Weapon Attack: +6 to hit. Hit: 6 (1d4 + 4) slashing damage.",
+      "Bite: Melee Weapon Attack: +6 to hit. Hit: 13 (2d8 + 4) piercing damage."
+    ],
+    "source": "Monster Manual"
+  },
+  {
+    "name": "Ancient Amethyst Dragon",
+    "cr": "22",
+    "type": "Gargantuan Dragon (Gem)",
+    "alignment": "Typically Neutral",
+    "biomes": ["Caves", "Secluded Pools", "Lakes"],
+    "immunities": [],
+    "resistances": ["Force", "Psychic"],
+    "traits": [
+      "Legendary Resistance (3/Day): If the dragon fails a saving throw, it can choose to succeed instead.",
+      "Telepathic Hub: The dragon can use its telepathy to initiate a conversation with up to eight creatures at once."
+    ],
+    "actions": [
+      "Multiattack: Makes one Bite attack and two Claw attacks.",
+      "Bite: Melee Weapon Attack: +15 to hit, reach 15 ft. Hit: 19 (2d10 + 8) piercing damage plus 13 (2d12) force damage.",
+      "Claw: Melee Weapon Attack: +15 to hit, reach 10 ft. Hit: 15 (2d6 + 8) slashing damage.",
+      "Singularity Breath (Recharge 5-6): Exhales a 90-foot cone of graviton energy. DC 23 Strength save or take 63 (14d8) force damage and be pulled toward the center."
+    ],
+    "source": "Fizban's Treasury of Dragons"
+  },
+  {
     "name": "Ancient Emerald Dragon",
     "cr": "21",
     "type": "Gargantuan Dragon (Gem)",
@@ -4335,5 +4676,3 @@ export const monsters =
     "source": "Fizban's Treasury of Dragons"
   }
 ]
-
-export default monsters;
