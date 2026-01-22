@@ -56,7 +56,7 @@
     <div id="monsterTableContainer">
       <table id="monster-table">
         <thead>
-          <tr>
+          <tr tabindex="0">
             <th class="sortable" data-key="name" scope="col">Name</th>
             <th class="sortable" data-key="cr" scope="col">CR</th>
             <th class="sortable" data-key="type" scope="col">Type</th>
@@ -67,7 +67,9 @@
         </thead>
         <tbody id="monster-table-body"></tbody>
       </table>
+      <button id="scrollToTopBtn">Scroll to Top</button>
     </div>
   </div>
+  <div id="monsters-stat-block" class="stat-block-popup"></div>
 </body>
 </html>
