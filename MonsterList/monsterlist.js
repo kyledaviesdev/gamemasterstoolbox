@@ -121,6 +121,35 @@ const SORT_STORAGE_KEY = 'monsterlist.sortState';
 // Currently selected monster name (used to persist selection across renders)
 let selectedMonsterName = null;
 
+// Live search query (words separated by whitespace). Matches any monster field.
+let searchQuery = '';
+
+// Return true when a monster matches all words in the search query (case-insensitive)
+function monsterMatchesSearch(m, query) {
+	const q = (query || '').trim().toLowerCase();
+	if (!q) return true;
+	const parts = q.split(/\s+/);
+	// Build searchable string from common fields + fallback to include others
+	let s = '';
+	const fields = ['name','type','description','traits','actions','addnote','alignment','source','biomes','languages','skills','damresistances','damimmunities','conimmunities'];
+	for (const f of fields) {
+		const v = m[f];
+		if (v === undefined || v === null) continue;
+		if (Array.isArray(v)) s += ' ' + v.join(' ');
+		else s += ' ' + String(v);
+	}
+	// include any additional fields just in case
+	for (const k in m) {
+		if (fields.includes(k)) continue;
+		const v = m[k];
+		if (v === undefined || v === null) continue;
+		if (Array.isArray(v)) s += ' ' + v.join(' ');
+		else s += ' ' + String(v);
+	}
+	s = s.toLowerCase();
+	return parts.every(p => s.includes(p));
+} 
+
 function saveSortState() {
 	try {
 		localStorage.setItem(SORT_STORAGE_KEY, JSON.stringify(sortState));
@@ -317,11 +346,11 @@ function closeMonsterStatBlock() {
 function renderList(monsters, checked) {
 	const tbody = document.getElementById('monster-table-body');
 	tbody.innerHTML = '';
-	let matches = monsters.filter(m => matchesMonster(m, checked));
+	let matches = monsters.filter(m => matchesMonster(m, checked) && monsterMatchesSearch(m, searchQuery));
 	// apply current sort
 	matches = applySort(matches);
 	const info = document.getElementById('filterInfo');
-	info.textContent = `${matches.length} monsters shown`;
+	info.textContent = `${matches.length} monsters shown${searchQuery ? ` (search: "${searchQuery}")` : ''}`; 
 	matches.forEach(m => {
 		const tr = document.createElement('tr');
 		tr.tabIndex = 0; // make rows focusable for keyboard
@@ -486,6 +515,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	// update outer legend counts initially
 	updateOuterLegendCount();
+
+	// Setup search box (live search with debounce)
+	const searchInput = document.getElementById('monsterSearch');
+	const clearSearchBtn = document.getElementById('clearSearchButton');
+	let searchTimeout = null;
+	if (searchInput) {
+		searchInput.addEventListener('input', (ev) => {
+			clearTimeout(searchTimeout);
+			searchTimeout = setTimeout(() => {
+				searchQuery = searchInput.value || '';
+				renderList(monsters, readChecked());
+			}, 150);
+		});
+		// Enter applies immediately
+		searchInput.addEventListener('keydown', (ev) => {
+			if (ev.key === 'Enter') { ev.preventDefault(); clearTimeout(searchTimeout); searchQuery = searchInput.value || ''; renderList(monsters, readChecked()); }
+		});
+	}
+	if (clearSearchBtn) {
+		clearSearchBtn.addEventListener('click', () => {
+			if (searchInput) { searchInput.value = ''; searchInput.focus(); }
+			searchQuery = '';
+			renderList(monsters, readChecked());
+		});
+	}
 
 	// clicking outside the table clears any selection
 	document.addEventListener('click', (ev) => {
